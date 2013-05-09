@@ -1,0 +1,13 @@
+ul.socialize-this { display:block; list-style:none; text-align:center; margin:15px 0; padding:0; }
+ul.socialize-this img { border:none; }
+ul.socialize-this li { display:inline; opacity:0.9; margin:3px; padding:0; }
+ul.socialize-this li:hover { opacity:1; }
+.widget-area .socialize-this li{display:block;}
+
+.widget-area ul.socialize-this a.cuteset{display:block; height:20px; margin: 5px 0;}
+a.cuteset{display: inline; padding: 9px 10px 8px 40px; height: 36px; background: url(widgets/cute/cute_sprite.png) no-repeat top left;}
+a.cuteset.facebook{ background-position: 0 0; width: 36px; height: 36px; } 
+a.cuteset.reddit{ background-position: 0 -46px; width: 36px; height: 36px; } 
+a.cuteset.stumbleupon{ background-position: 0 -92px; width: 36px; height: 36px; } 
+a.cuteset.twitter{ background-position: 0 -138px; width: 36px; height: 36px; } 
+

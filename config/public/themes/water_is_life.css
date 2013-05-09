@@ -1,0 +1,7 @@
+/* Hide raised amounts and focus on donors */
+.fundraiser-cards .raised,
+.fundraiser-cards .progress { display: none; }
+
+.team-page #gift-details .details {
+  width: 350px;
+}

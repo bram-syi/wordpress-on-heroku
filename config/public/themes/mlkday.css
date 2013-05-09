@@ -1,0 +1,49 @@
+#appeal {
+  background: white url(http://seeyourimpact.org/thumbs/250x73/85/2011/08/CAA-Logo-300x88.jpg) no-repeat 15px 285px;
+}
+
+#appeal-image img {
+  border: 2px solid #08659E;
+}
+
+#appeal .appeal-msg {
+  width: 630px;
+  margin-left: 20px;
+  font-size: 108%;
+}
+
+.stats2 {
+  padding: 5px 20px 3px !important;
+  background: #08659E !important;
+  color: white !important;
+}
+
+#appeal #giveany {
+  position: absolute;
+  bottom: -57px;
+  right: 20px;
+  width: 260px;
+  padding: 6px;
+  background: #fb4;
+  box-shadow: 0 0 10px #666;
+}
+.ie7 #appeal #giveany {
+  width: 280px;
+}
+#appeal #giveany .box {
+  padding: 10px;
+  border: 1px solid #FC8;
+  background: transparent;
+}
+.ie7 #appeal #giveany .box {
+  padding: 10px 0;
+}
+#appeal #giveany label {
+  font-size: 110%;
+}
+#damt {
+  font-size: 18pt;
+  width: 70px !important;
+}
+
+

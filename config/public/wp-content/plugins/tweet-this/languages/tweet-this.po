@@ -1,0 +1,363 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tweet This v1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-17 19:46-0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Richard X. Thripp <richardxthripp@thripp.com>\n"
+"Language-Team: Richard X. Thripp <richardxthripp@thripp.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: tweet-this.php:311
+#: tweet-this.php:1049
+#: tweet-this.php:1276
+msgid "Tweet This Post"
+msgstr ""
+
+#: tweet-this.php:328
+#: tweet-this.php:1063
+#: tweet-this.php:1278
+msgid "Post to Twitter"
+msgstr ""
+
+#: tweet-this.php:420
+msgid "Tweet"
+msgstr ""
+
+#: tweet-this.php:420
+msgid "Twitter"
+msgstr ""
+
+#: tweet-this.php:423
+msgid "[Post to Twitter]"
+msgstr ""
+
+#: tweet-this.php:432
+msgid "[Post to Plurk]"
+msgstr ""
+
+#: tweet-this.php:440
+#: tweet-this.php:441
+msgid "Plurk"
+msgstr ""
+
+#: tweet-this.php:447
+msgid "[Post to Yahoo Buzz]"
+msgstr ""
+
+#: tweet-this.php:457
+#: tweet-this.php:458
+msgid "Buzz"
+msgstr ""
+
+#: tweet-this.php:459
+#: tweet-this.php:460
+msgid "Yahoo Buzz"
+msgstr ""
+
+#: tweet-this.php:466
+msgid "[Post to Delicious]"
+msgstr ""
+
+#: tweet-this.php:474
+#: tweet-this.php:475
+msgid "Delicious"
+msgstr ""
+
+#: tweet-this.php:481
+msgid "[Post to Digg]"
+msgstr ""
+
+#: tweet-this.php:489
+#: tweet-this.php:490
+msgid "Digg"
+msgstr ""
+
+#: tweet-this.php:496
+msgid "[Post to Facebook]"
+msgstr ""
+
+#: tweet-this.php:505
+#: tweet-this.php:506
+msgid "Facebook"
+msgstr ""
+
+#: tweet-this.php:510
+#: tweet-this.php:512
+#: tweet-this.php:532
+#: tweet-this.php:534
+msgid " This Post"
+msgstr ""
+
+#: tweet-this.php:516
+msgid "[Post to MySpace]"
+msgstr ""
+
+#: tweet-this.php:528
+#: tweet-this.php:529
+msgid "MySpace"
+msgstr ""
+
+#: tweet-this.php:538
+msgid "[Post to Ping.fm]"
+msgstr ""
+
+#: tweet-this.php:547
+#: tweet-this.php:548
+msgid "Ping"
+msgstr ""
+
+#: tweet-this.php:549
+#: tweet-this.php:550
+msgid "Ping.fm"
+msgstr ""
+
+#: tweet-this.php:556
+msgid "[Post to Reddit]"
+msgstr ""
+
+#: tweet-this.php:564
+#: tweet-this.php:565
+msgid "Reddit"
+msgstr ""
+
+#: tweet-this.php:571
+msgid "[Post to StumbleUpon]"
+msgstr ""
+
+#: tweet-this.php:579
+#: tweet-this.php:580
+msgid "Stumble"
+msgstr ""
+
+#: tweet-this.php:581
+#: tweet-this.php:582
+msgid "StumbleUpon"
+msgstr ""
+
+#: tweet-this.php:720
+msgid "Tweets about this post"
+msgstr ""
+
+#: tweet-this.php:773
+msgid "Tweet This options saved!"
+msgstr ""
+
+#: tweet-this.php:878
+#: tweet-this.php:990
+msgid "Characters"
+msgstr ""
+
+#: tweet-this.php:889
+msgid "Tweet This options reset!"
+msgstr ""
+
+#: tweet-this.php:933
+#: tweet-this.php:1316
+msgid "Tweet This Options"
+msgstr ""
+
+# Maintain line breaks <br /> about every 55 characters.
+#: tweet-this.php:939
+msgid "Allow_url_fopen and curl are disabled in your PHP configuration.</font><br />All URLs will be served locally, regardless of your chosen URL service.<br />To fix this, try adding these lines to your <a href=\"http://www.washington.edu/computing/web/publishing/php-ini.html\">php.ini file</a>:<br /> `extension = curl.so` and `allow_url_fopen = on`.</strong>"
+msgstr ""
+
+# Leave [TITLE] and [URL] as-is (add translations in parentheses).
+# Maintain line breaks <br /> about every 55 characters.
+#: tweet-this.php:949
+#, php-format
+msgid "You have <strong>%1$s</strong> published posts and pages. Tweet This has short URLs for <strong>%2$s</strong> of them.<br />URLs are cached as needed. Tokens for the custom text fields: <strong>[TITLE]</strong>, <strong>[URL]</strong>."
+msgstr ""
+
+#: tweet-this.php:959
+msgid "URL Service:"
+msgstr ""
+
+#: tweet-this.php:979
+msgid "Local, i.e."
+msgstr ""
+
+#: tweet-this.php:1004
+msgid "Use shorter ad.vu URLs"
+msgstr ""
+
+#: tweet-this.php:1009
+#: tweet-this.php:1018
+msgid "Warning:"
+msgstr ""
+
+# Maintain line breaks <br /> about every 55 characters.
+#: tweet-this.php:1010
+msgid "It is recommended you uncheck \"Display 'Tweets about<br />this post' list below Tweet This links\" while using bit.ly,<br />because bit.ly's URLs are case-sensitive and you will<br />see unrelated tweets on your blog."
+msgstr ""
+
+# Maintain line breaks <br /> about every 55 characters.
+#: tweet-this.php:1019
+msgid "It is recommended you uncheck \"Display 'Tweets about<br />this post' list below Tweet This links\" while using idek.net,<br />because idek.net's URLs are case-sensitive and you will<br />see unrelated tweets on your blog."
+msgstr ""
+
+# Maintain line breaks <br /> about every 55 characters.
+#: tweet-this.php:1028
+msgid "<strong><font color=\"red\">Curl, which Tweetburner requires, is disabled in your PHP configuration.</font><br />Choosing Tweetburner will have the same affect as chosing \"Local.\"<br />To fix this, try adding the line `extension = curl.so` to your <a href=\"http://www.washington.edu/computing/web/publishing/php-ini.html\">php.ini file</a></strong>."
+msgstr ""
+
+#: tweet-this.php:1039
+msgid "Note:"
+msgstr ""
+
+#: tweet-this.php:1040
+msgid "For no link text, enter <strong>[BLANK]</strong> below. \"Tweet\" and \"Twitter\"<br />will be replaced by \"Plurk,\" \"Delicious,\" \"Digg,\" etc. as needed."
+msgstr ""
+
+#: tweet-this.php:1044
+msgid "Link Text:"
+msgstr ""
+
+#: tweet-this.php:1052
+msgid "Tweet / Plurk Text:"
+msgstr ""
+
+#: tweet-this.php:1059
+msgid "Popup Title Text:"
+msgstr ""
+
+#: tweet-this.php:1067
+msgid "Alignment:"
+msgstr ""
+
+#: tweet-this.php:1072
+msgid "Left"
+msgstr ""
+
+#: tweet-this.php:1076
+msgid "Right"
+msgstr ""
+
+#: tweet-this.php:1080
+msgid "Center"
+msgstr ""
+
+#: tweet-this.php:1085
+msgid "Only show Tweet This when viewing single posts or pages"
+msgstr ""
+
+#: tweet-this.php:1090
+msgid "Hide Tweet This on pages"
+msgstr ""
+
+#: tweet-this.php:1095
+msgid "Use \"www.\" instead of \"http://\" in shortened URLs"
+msgstr ""
+
+#: tweet-this.php:1100
+msgid "Don't shorten URLs under 30 characters"
+msgstr ""
+
+#: tweet-this.php:1105
+msgid "Open links in new windows"
+msgstr ""
+
+#: tweet-this.php:1110
+msgid "Add nofollow tag to links"
+msgstr ""
+
+#: tweet-this.php:1115
+msgid "Display \"Tweets about this post\" list below Tweet This links (buggy)"
+msgstr ""
+
+#: tweet-this.php:1117
+msgid "Limit \"Tweets about this post\" list to"
+msgstr ""
+
+#: tweet-this.php:1162
+msgid "tweets"
+msgstr ""
+
+#: tweet-this.php:1166
+msgid "Only show \"Tweets about this post\" list when viewing single posts or pages"
+msgstr ""
+
+#: tweet-this.php:1171
+msgid "Insert Tweet This message in footer"
+msgstr ""
+
+#: tweet-this.php:1176
+msgid "Insert Google AdSense ads to support Tweet This"
+msgstr ""
+
+#: tweet-this.php:1181
+msgid "Insert Tweet This links"
+msgstr ""
+
+#: tweet-this.php:1187
+msgid "Insert Plurk This links"
+msgstr ""
+
+#: tweet-this.php:1193
+msgid "Insert Buzz This (Yahoo) links"
+msgstr ""
+
+#: tweet-this.php:1199
+msgid "Insert Delicious links"
+msgstr ""
+
+#: tweet-this.php:1205
+msgid "Insert Digg This links"
+msgstr ""
+
+#: tweet-this.php:1211
+msgid "Insert Facebook links"
+msgstr ""
+
+#: tweet-this.php:1217
+msgid "Insert Myspace links"
+msgstr ""
+
+#: tweet-this.php:1223
+msgid "Insert Ping This (ping.fm) links"
+msgstr ""
+
+#: tweet-this.php:1229
+msgid "Insert Reddit links"
+msgstr ""
+
+#: tweet-this.php:1235
+msgid "Insert StumbleUpon links"
+msgstr ""
+
+#: tweet-this.php:1253
+msgid "Save Options"
+msgstr ""
+
+#: tweet-this.php:1255
+msgid "Reset Options"
+msgstr ""
+
+#: tweet-this.php:1256
+msgid "Are you sure you want to reset Tweet This to its default settings?"
+msgstr ""
+
+#: tweet-this.php:1258
+msgid "Thanks to <a href=\"http://blog.assbach.de/2009/01/11/freie-tweet-this-buttons/\">Sascha</a> and <a href=\"http://flickr.com/photos/grahamsblog/2347756292/\">Graham Smith</a> for the Tweet This buttons."
+msgstr ""
+
+#: tweet-this.php:1262
+msgid "If you like Tweet This, <a href=\"http://richardxthripp.thripp.com/donate\">make a donation</a> to its development."
+msgstr ""
+
+#: tweet-this.php:1317
+msgid "Tweet This"
+msgstr ""
+
+#: tweet-this.php:1407
+msgid " links powered by <a href=\"http://richardxthripp.thripp.com/tweet-this\">Tweet This v1.4.1</a>, a WordPress plugin for Twitter."
+msgstr ""
+

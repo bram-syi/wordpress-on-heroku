@@ -1,0 +1,13 @@
+<config>
+	
+	<img size="600" />
+	
+	<bigThumb x="60" y="20" rotation="-1" />
+	
+	<transition duration="1.5" fadeIn="0.8" fadeOut="0.2" timeout="20" />
+	
+	<random x="5" y="10" rotation="20" />
+	
+	<stream speed="10" padding="8" overlap="8" />
+	
+</config>

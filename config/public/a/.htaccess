@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteBase /a
+
+# Added for CORS access
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+# Disallow non-SYI access to dev machines
+RewriteCond %{HTTP_HOST} !^(.*)seeyourimpact.org$ [NC]
+RewriteCond %{HTTP_USER_AGENT} !NING/1.0 [NC]
+RewriteCond %{HTTP_USER_AGENT} !facebookexternalhit [NC]
+RewriteCond %{HTTP_COOKIE} !iamsyi=yes [NC]
+RewriteRule ^ http://seeyourimpact.org [L]

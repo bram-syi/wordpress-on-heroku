@@ -1,0 +1,52 @@
+/* Specific things to hide for this campaign */
+.progress-widget td.date { display: none; }
+#fundraiser-11136 { display: none; }
+#fundraiser-10999 .name { display: none; }
+header .tab-bar, #container .crumbs, header .custom-tab-bar { display: none; }
+
+/* General page styles (to be adopted by others?) */
+.campaign-content h1.campaign-title {
+  font-size: 21pt;
+}
+.campaign-content h2 {
+  font-weight: normal;
+}
+
+.stats2 .stat2 {
+  margin-left: 5px;
+}
+
+.team-page h2 {
+  color: #F47C20;
+  font-weight: normal;
+}
+
+/* Fellows photos */
+.campaign-content .wp-caption.alignleft {
+  margin-right: 15px;
+}
+.campaign-content .wp-caption.alignleft img {
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+.campaign-content p.wp-caption-text {
+  color: #666;
+  font-size: 75%;
+  margin-top: 0;
+}
+
+/* Gift browser changes */
+.campaign-page #gift-browser {
+  margin-left: -30px;
+}
+#gift-details {
+  height: 580px;
+}
+#gift-details .details {
+  width: 600px;
+}
+
+/* Cart page updates when style is applied */
+#cart-page h1 { margin-top: 20px; }
+#cart-page .page-main { padding-bottom: 250px; }
+#cart-page .cart-gift { display: none; } 

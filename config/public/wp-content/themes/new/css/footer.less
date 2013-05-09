@@ -1,0 +1,74 @@
+footer {
+  .navbar, .navbar .navbar-inner {
+    background: transparent;
+    .box-shadow(none);
+    padding: 0;
+  }
+  .footer-navbar { 
+    font-size: 80%;
+
+    .nav > li > a, .navbar-text { 
+      line-height: 1em;
+      padding: .2em 1em;
+    }
+  }
+
+  h1,h2,h3,h4,p { color: white; }
+
+  .col {
+    padding: 20px 0;
+
+    .btn-social,
+    h2,h4 {
+      font: italic 500 100% omnes-pro-i5, omnes-pro, Verdana, sans-serif;
+      margin-bottom: 15px;
+      clear: both;
+    }
+
+    ul, ol {
+      margin-top: 0;
+      padding: 0 0 0 0px;
+      margin: 0;
+    }
+    li {
+      list-style-type: none;
+      line-height: 1em;
+    }
+
+    a {
+      color: #828282;
+      -webkit-transition: all 0.25s ease-in-out;
+      display: block;
+      text-decoration: none;
+
+      &.facebook-btn:hover {
+        color: #3B5998; 
+      }
+      &.twitter-btn:hover {
+        color: #3B5998; 
+      }
+
+    }
+    a.btn-contact { 
+      width: 110px;
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    .widget_nav_menu {
+      border-top: 1px solid #4a4a4a;
+      margin-right: 30%;
+
+      li a, li a:hover {
+        padding: .6em 0 .6em .6em;
+        border-bottom: 1px solid #4a4a4a;
+      }
+      a:hover, a:active, a:visited {
+        outline: none;
+        text-decoration: none;
+      }
+      a:hover { color: white; }
+    }
+  }
+}

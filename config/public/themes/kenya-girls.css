@@ -1,0 +1,8 @@
+/* Kenya girls has no join yet */
+.team-join, .team-fundraisers { display: none; }
+
+/* Kenya girls custom header */
+.home-page .custom-tab-bar { display: none; }
+
+/* Cart doesn't need to say "a gift to:" */
+#cart-page .cart-gift { display: none; }

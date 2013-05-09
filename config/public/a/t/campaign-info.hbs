@@ -1,0 +1,14 @@
+<div>
+{{#model}}
+  <h2>{{title}} <span class="field-id">
+    {{#partner_name}}<a class="open-tab" rel="partner/{{partner_domain}}">{{.}}</a> / {{/partner_name}}
+    {{name}}</span>
+  </h2>
+  {{#description}}<div>{{.}}</div>{{/description}}
+  {{#url}}<a target="_partner" class="user-attr user-link" href="{{.}}"><i class="icon-external-link"></i> {{.}}</a>{{/url}}
+  {{#goal}}<span class="user-attr"><i class="icon-asterisk"></i> ${{.}} goal</span>{{/goal}}
+  {{#raised}}<span class="user-attr"><i class="icon-asterisk"></i> ${{.}} raised</span>{{/raised}}
+  {{#active}}<a class="user-attr open-tab" rel="fundraisers"><i class="icon-trophy"></i> {{.}} champs</a>{{/active}}
+  {{#donors}}<a class="user-attr open-tab" rel="donations"><i class="icon-user"></i> {{.}} donors</a>{{/donors}}
+{{/model}}
+</div>

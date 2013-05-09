@@ -1,0 +1,40 @@
+body.theme-kimberly .appeal {
+  background: #FCFCFC url(http://seeyourimpact.org/design/campaign/kimberly.jpg) no-repeat 0 0;
+  line-height: 1.3em;
+}
+body.theme-kimberly .appeal-msg {
+  float: right;
+  width: 650px;
+}
+body.theme-kimberly .share-campaign {
+  top: auto; bottom: 5px;
+  left: 20px;
+  z-index:2;
+}
+body.theme-kimberly .appeal-msg a {
+  font-weight: bold;
+  color: #444;
+  text-decoration: underline;
+}
+body.theme-kimberly h1 {
+  margin: 10px 0 20px -30px;
+}
+body.theme-kimberly .appeal-image {
+  display: none;
+}
+body.theme-kimberly .appeal-msg video {
+  position: relative;
+  top: -10px;
+}
+body.theme-kimberly #appeal1 {
+  position: absolute;
+  width: 220px;
+  height: 60px;
+  background: url(/design/campaign/kimberlylogo.png) no-repeat 0 0;
+  z-index: 10;
+  bottom: 10px;
+  left: 20px;
+  display: block;
+}
+
+

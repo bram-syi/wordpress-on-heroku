@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /wp-content/gift-images
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} .*wp-content/gift-images/.*\.(gif|jpg|jpeg|png)$ [NC]
+RewriteRule .* default.jpg [L]

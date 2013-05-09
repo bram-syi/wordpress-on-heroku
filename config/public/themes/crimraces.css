@@ -1,0 +1,18 @@
+.campaign-page #stats-bar .stats2 {
+  background: #295196;
+  color: white;
+}
+
+#campaign-editor-page #main-image {
+  margin-top: 91px;
+}
+
+.start-page .promo-crimraces-start-banner div {
+  margin: -15px -35px 20px !important;
+  border: none !important;
+  width: 690px !important;
+}
+
+.start-page #post_content {
+  height: 300px;
+}

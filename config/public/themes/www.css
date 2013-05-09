@@ -1,0 +1,4 @@
+/* Hide raised amounts and focus on donors */
+.fundraiser-cards .raised,
+.fundraiser-cards .progress { display: none; }
+

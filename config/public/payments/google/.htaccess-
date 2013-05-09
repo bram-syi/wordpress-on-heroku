@@ -1,0 +1,4 @@
+AuthName "Google checkout Basic Authentication"
+AuthType Basic
+AuthUserFile /home/digvijay/dev/dev5/payments/google/.htpasswd
+require valid-user

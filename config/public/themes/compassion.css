@@ -1,0 +1,43 @@
+.theme-compassion .stats,
+.theme-compassion #social .gallery-left,
+.theme-compassion #give { 
+  display: none; 
+}
+
+.theme-compassion .share-campaign {
+  top: 280px;
+}
+
+.theme-compassion #social .gallery-right {
+  float: left;
+  margin: 0 0 0 290px;
+}
+
+.theme-compassion .appeal h1,
+.theme-compassion .social h2 {
+  font-weight: normal;
+  margin: 15px 0 25px;
+}
+.theme-compassion .appeal-image {
+  text-align: left;
+  width: 270px;
+}
+.theme-compassion .appeal .msg {
+  padding-left: 30px;
+}
+.theme-compassion .appeal-image img {
+  margin: 20px;
+  border: 0;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.theme-compassion .donate-any {
+  float: right;
+  width: 230px;
+  margin: -50px 0px 20px 50px;
+  padding: 20px;
+  border: 2px solid #9BD;
+  box-shadow: 0 0 4px #888;
+}

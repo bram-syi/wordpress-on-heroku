@@ -1,0 +1,25 @@
+body.theme-bbam .appeal-image {
+  display: none;
+}
+
+body.theme-bbam .appeal {
+  background: white url(/themes/bbam/bbam.png) no-repeat 20px 20px;
+  min-height: 360px;
+}
+
+body.theme-bbam .appeal-msg {
+  width: 460px;
+  padding: 20px 30px;
+  float:right;
+  color: #001619;
+
+  background: url(/themes/bbam/background.jpg) repeat-x 0 214px;
+}
+body.theme-bbam .appeal-msg h1 {
+  color: #3CBBE4;
+  margin: 15px 0;
+  font-size: 24pt;
+  font-weight: normal;
+}
+body.theme-bbam .appeal a { text-decoration: underline; }
+

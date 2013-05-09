@@ -1,0 +1,15 @@
+.campaign-page { margin: 0; }
+.campaign-sidebar { width: 280px; }
+
+.stats2 {
+  background: #224BFF !important;
+  color: white !important;
+}
+
+.quote {
+  font-size: 16px;
+}
+.quote .mark {
+  width: 30px;
+}
+

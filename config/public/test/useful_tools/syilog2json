@@ -1,0 +1,39 @@
+#!/usr/bin/env perl
+
+# turns syilog into json events
+
+use strict;
+use warnings;
+use JSON;
+
+my $e;
+$| = 1;
+
+while (<>) {
+    # print encode_json({debug=>$_});
+    if (/^(?:(\S+) )?\[(.*?)\] (.*)/) {
+        emit();
+        $e->{tag} = $1;
+        $e->{timestamp} = $2;
+        $e->{message} = $3;
+    }
+    else {
+        $e->{message} .= $_;
+    }
+
+    if (/(\((\S+) (\S+):(\d+)\))$/) {
+        $e->{function} = $2;
+        $e->{file} = $3;
+        $e->{line} = $4;
+        $e->{message} =~ s/\Q$1\E\s*$//;
+        emit();
+    }
+}
+
+sub emit {
+    if ($e->{timestamp}) {
+      $e->{message} =~ s/\s*$//;
+      print encode_json($e);
+    }
+    $e->{$_} = undef for qw/tag timestamp message function file line/;
+}

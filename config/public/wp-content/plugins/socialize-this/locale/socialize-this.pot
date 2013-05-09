@@ -1,0 +1,644 @@
+# Copyright (C) 2010 Socialize This
+# This file is distributed under the same license as the Socialize This package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Socialize This 2.2.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/socialize-this\n"
+"POT-Creation-Date: 2011-07-13 12:41:41+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: inc/socialize-this-php5-enviroment.php:65
+#: inc/socialize-this-php5-enviroment.php:137
+msgid "Overview"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:66
+#: inc/socialize-this-php5-enviroment.php:139
+msgid "Social Widgets"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:77
+#: inc/socialize-this-php5-enviroment.php:84
+msgid "Socialize This Stats"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:99
+#: inc/socialize-this-php5-enviroment.php:186
+#: inc/socialize-this-php5-enviroment.php:192
+#: inc/socialize-this-php5-enviroment.php:216
+msgid "Tweets"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:100
+msgid "Facebook Shares"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:101
+msgid "Google Plus Ones"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:103
+msgid "This post's socialisation has not been analysed yet."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:103
+msgid "Click here to run on this test"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:107
+msgid "Short URL: "
+msgstr ""
+
+#. #-#-#-#-#  plugin.pot (Socialize This 2.2.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: inc/socialize-this-php5-enviroment.php:134
+msgid "Socialize This"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:138
+msgid "Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:140
+#: inc/socialize-this-php5-enviroment.php:700
+msgid "Open Graph"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:141
+msgid "Advanced Functions/Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:142
+msgid "FAQ's"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:151
+msgid "Thank you for using Socialize This"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:152
+msgid ""
+"I am always happy to recieve feedback &amp; give you a little helping hand. "
+"On Twitter I'm"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:159
+msgid "Support Socialize This - Donate via PayPal"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:186
+msgid "Your blog's home has had"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:186
+#: inc/socialize-this-php5-enviroment.php:217
+msgid "Likes"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:191
+msgid "Most Socialized Posts/Pages"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:193
+msgid "Facebook Likes"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:194
+msgid "Reddit"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:195
+msgid "Google +1's"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:196
+msgid "Last Updated"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:218
+msgid "Score"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:218
+msgid "Comments"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:244
+msgid "Twitter Authentication Suscessful."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:246
+msgid "Twitter Authentication Failed. Try Again."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:266
+msgid "Bit.ly Authentication Failed. Check your credentials"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:279
+msgid "Settings Updated"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:285
+msgid ""
+"Note: Your server configuration does not allow cURL, people enable it to "
+"enable twitter updates."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:291
+msgid "General Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:296
+msgid ""
+"Include Soical widgets before the comments template (normally after posts)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:297
+#: inc/socialize-this-php5-enviroment.php:861
+#: inc/socialize-this-php5-enviroment.php:867
+#: inc/socialize-this-php5-enviroment.php:873
+msgid "Enable:"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:300
+msgid "You can manually include the social widgets using the following code:"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:310
+msgid "URL Shortening Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:315
+msgid "URL Shortening Service"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:335
+msgid "Bit.ly Account Information"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:338
+msgid "Your Bit.Ly Username and API key."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:338
+#: inc/socialize-this-php5-enviroment.php:367
+msgid "This requires cURL."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:342
+msgid "Username:"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:347
+msgid "API Key:"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:357
+msgid "Twitter Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:362
+msgid "Notify Twitter when post is Published."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:365
+msgid ""
+"To activate this service, click the \"Sign in with Twitter\" button, then "
+"click \"Allow\"."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:371
+msgid "Screen Name"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:373
+msgid "Disable Service"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:390
+msgid "Sign in with Twitter:"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:394
+msgid "Error talking via OAuth to twitter:"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:400
+msgid "Twitter's New Post Status Update Template"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:403
+msgid "For a full list of avialable tags see the "
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:403
+msgid "Tag List "
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:413
+msgid "Save Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:446
+#: inc/socialize-this-php5-enviroment.php:481
+msgid "Edit Widget"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:452
+#: inc/socialize-this-php5-enviroment.php:615
+msgid "Name"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:456
+#: inc/socialize-this-php5-enviroment.php:619
+#: inc/socialize-this-php5-enviroment.php:647
+msgid "Author"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:460
+#: inc/socialize-this-php5-enviroment.php:623
+msgid "Author URL"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:464
+#: inc/socialize-this-php5-enviroment.php:627
+msgid "HTML"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:464
+#: inc/socialize-this-php5-enviroment.php:627
+#: inc/socialize-this-php5-enviroment.php:939
+msgid "Tag List"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:468
+msgid "PHP Embed Code"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:472
+#: inc/socialize-this-php5-enviroment.php:536
+#: inc/socialize-this-php5-enviroment.php:707
+msgid "Enabled"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:491
+msgid "Widget Added"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:502
+msgid "Widget Set Failed to add"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:511
+msgid "Widget Updated"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:517
+msgid "Widgets Updated"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:520
+msgid "Widgets Deleted"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:527
+msgid "Social Widgets (Drag and Drop)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:533
+msgid "Position"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:534
+msgid "Example"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:535
+msgid "Name (Author)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:537
+#: inc/socialize-this-php5-enviroment.php:558
+msgid "Edit"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:558
+msgid "Delete"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:570
+msgid "Save Widget Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:609
+#: inc/socialize-this-php5-enviroment.php:633
+msgid "Add Widget"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:639
+#: inc/socialize-this-php5-enviroment.php:673
+msgid "Add Widget Set"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:646
+msgid "Widget Set"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:648
+msgid "Install"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:701
+msgid ""
+"The Open Graph protocol defines how you page will show up on Facebook. It is "
+"useful to fill these out even if you don't use the \"Like\" button."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:702
+msgid "For more information check out the Open Graph protocol developer page"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:708
+msgid "Meta Value"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:709
+msgid "Property"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:709
+#: inc/socialize-this-php5-enviroment.php:755
+#: inc/socialize-this-php5-enviroment.php:945
+msgid "Description"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:716
+#: inc/socialize-this-php5-enviroment.php:722
+#: inc/socialize-this-php5-enviroment.php:733
+msgid "or"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:716
+msgid "Use page/post Title."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:717
+msgid "Title"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:717
+#: inc/socialize-this-php5-enviroment.php:723
+#: inc/socialize-this-php5-enviroment.php:728
+#: inc/socialize-this-php5-enviroment.php:734
+msgid "This is required."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:717
+msgid "This is the title you want to appear on facebook."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:722
+msgid "Use \"article\" for blog posts and \"blog\" for pages?"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:723
+msgid "Type"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:723
+msgid "The type of object the user is \"liking\". It must be from the"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:723
+msgid "Object types list"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:728
+msgid "Image URL"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:728
+msgid "An image which represents you site, e.g. your logo"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:733
+msgid "Use page/post URL."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:734
+msgid "URL"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:734
+msgid "The URL the user will be \"liking\"."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:739
+msgid "Site Name"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:744
+msgid "Admins"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:749
+msgid "App ID"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:762
+msgid "Other Open Graph Meta Data"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:766
+msgid ""
+"Once you are happy with your Open Graph settings, you may want to check them "
+"with the"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:766
+msgid "URL Linter"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:766
+msgid "tool"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:768
+msgid "Save Open Graph Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:796
+msgid "Post Socialized"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:796
+msgid "Return to Post"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:819
+msgid "Advanced Settings Updated"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:831
+msgid "URL's ReGenerated"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:835
+#: inc/socialize-this-php5-enviroment.php:839
+msgid "Updated Socialized Data"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:844
+msgid "Setting's Reset"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:855
+msgid "Advanced Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:860
+msgid "Disable Socialize This CSS Sheet"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:866
+msgid "Disable Socialize This Cache"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:872
+msgid "Give Socialize This a big admin link"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:882
+msgid "Advanced Twitter Settings"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:887
+msgid "OAuth Consumer Key"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:893
+msgid "OAuth Consumer Secret"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:899
+#: inc/socialize-this-php5-enviroment.php:983
+msgid "@Anywhere API Key"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:902
+msgid "This will enable Widgets to use your @Anywhere key (%anywhere%)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:915
+msgid "Advanced Functions"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:918
+msgid "May take a while or timeout."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:921
+msgid "Resets Socialize This's Settings."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:924
+msgid "Runs the Cron which updates the Socialized Data."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:927
+msgid ""
+"Runs the Cron which updates the Socialized Data for all posts (May Crash/"
+"timeout)."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:930
+msgid "Check that twitter is recieving tweets."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:944
+msgid "Tag"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:950
+msgid "The permalink to the post (URL Encoded)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:954
+msgid "The permalink to the post"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:958
+msgid ""
+"The shortened URL of your permalink. Generated on Publish, if short url is "
+"not present permalink will be used. (URL Encoded)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:962
+msgid "Same as %short_url% but not URL Encoded."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:966
+msgid "The title of the post (URL Encoded)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:970
+msgid "The title of the post"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:974
+msgid ""
+"The Excerpt of the post. If the Except does not exist, the title will double "
+"up as the descirption. (URL Encoded)"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:979
+msgid "Your RSS URL"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:987
+msgid "Twitter Username"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:991
+msgid "A list of the tags with # added before them."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:995
+msgid "URL encoded version of %raw_tags%"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:999
+msgid "The date the post was published."
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:1003
+msgid "URL encoded version of %raw_date_posted%"
+msgstr ""
+
+#: inc/socialize-this-php5-enviroment.php:1008
+msgid "The URL of the /socialize-this/widgets folder."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.fullondesign.co.uk/projects/socialize-this"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds social widgets to your blog posts. It also can update your twitter "
+"status when you publish a post."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mike Rogers"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.fullondesign.co.uk/"
+msgstr ""

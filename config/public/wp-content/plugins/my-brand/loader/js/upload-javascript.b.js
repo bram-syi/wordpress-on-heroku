@@ -1,0 +1,4 @@
+window.onload = getCssURL;
+function getCssURL() { var cssURL = document.getElementById('cSsURL'); cssURL.title += (cssURL.title=='') ? '(View CSS File in New Window)' : ' (View CSS File in New Window)'; cssURL.onclick = function() { openCSS(this.href); return false; } } 
+function openCSS(url) { var winW = 800; var winH = 630; var winX = (screen.availWidth - winW) / 2; var winY = (screen.availHeight - winH) / 2; var features = 'left='+winX+',top='+winY+',width='+winW+',height='+winH+',toolbar=0,location=0,status=0,scrollbars= 1,resizable=0'; 
+var cssOPEN = window.open(url,cssOPEN,features); if (cssOPEN) { cssOPEN.focus(); } else { window.location.href = url; }}

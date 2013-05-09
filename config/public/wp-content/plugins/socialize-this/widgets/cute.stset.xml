@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+	<author><![CDATA[Mike Rogers]]></author>
+	<author_url><![CDATA[http://www.fullondesign.co.uk/]]></author_url>
+	<name>Cute</name>
+	<preview>cute/cute.jpg</preview>
+	<description><![CDATA[Deafult Widgets - Originally made by <a href="http://alteredadvice.com/alteredicons-40-social-networking-icon-set/">John MacMenamin</a>]]></description>
+	<widget>
+		<name>Reddit</name>
+		<html><![CDATA[<a href="%reddit_link%" target="_blank" title="Upvote on Reddit" class="reddit cuteset">Upvote</a>]]></html>
+		<enabled>2</enabled>
+	</widget>
+	<widget>
+		<name>Facebook</name>
+		<html><![CDATA[<a href="http://www.facebook.com/sharer.php?u=%permalink%&t=%title%" target="_blank" title="Share on Facebook" class="facebook cuteset">Share</a>]]></html>
+		<enabled>2</enabled>
+	</widget>
+	<widget>
+		<name>StumbleUpon</name>
+		<html><![CDATA[<a href="http://www.stumbleupon.com/submit?url=%permalink%&title=%title%" target="_blank" title="Upvote on StumbleUpon" class="stumbleupon cuteset">Upvote</a>]]></html>
+		<enabled>2</enabled>
+	</widget>
+	<widget>
+		<name>Twitter</name>
+		<html><![CDATA[<a href="http://twitter.com/home?status=Currently Reading %short_url%"  target="_blank" title="Retweet on Twitter" class="twitter cuteset">Tweet</a>]]></html>
+		<enabled>2</enabled>
+	</widget>
+</channel>

@@ -1,0 +1,115 @@
+
+.campaign-page {
+  border: 1px solid #ccc;
+}
+
+.campaign-sidebar {
+  width: 300px;
+  padding-right: 5px;
+}
+
+.campaign-content {
+  box-shadow: 0 0 10px #888;
+  background: white;
+  margin: 20px;
+  width: 645px; 
+}
+.campaign-content p {
+  font-family: 'Gill Sans / Gill Sans MT', 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.campaign-content .campaign-title {
+  font-size: 20pt;
+  color: #2B4E64;
+  line-height: normal;
+}
+
+.readathon-about {
+  margin: 30px 45px
+}
+.promo-readathon-about .video {
+  margin: 10px 0;
+  border: 1px solid #888;
+}
+.promo-readathon-about .about-right {
+  width: 250px;
+  margin-left: 20px;
+}
+.promo-readathon-about .about-right p {
+  margin-top: 10px;
+  font-size: 80%;
+}
+.promo-readathon-about .about-text p {
+  width: 580px;
+  line-height: 1.4;
+}
+.promo-readathon-about .about-text h2 {
+  padding-top: 10px;
+}
+.sample-stories {
+  padding: 0;
+}
+.readathon-about .sample-stories h2 {
+  display: none;
+}
+
+#main-image {
+  zoom: 100%;
+  margin-top: -30px;
+  margin-right: 10px;
+}
+
+#appeal { display: none; }
+
+#other_city:disabled, #other_coordinator:disabled {
+  opacity: 0.3;
+/*
+  color: white;
+  color: transparent;
+*/
+}
+
+.team-page .dot {
+  position: absolute;
+  width: 40px; height: 40px;
+  text-decoration: none !important;
+  color: #70463A;
+  display: none;
+}
+.team-page .dot label {
+  position: absolute;
+  font: 11px Impact, Impact5, Charcoal6, sans-serif;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.team-page .selected label {
+  color: black;
+  font-size: 14px;
+
+  border: 1px solid black;
+  background: white;
+  z-index: 2;
+  padding: 2px 4px;
+  margin: -2px 0 0 -4px;
+}
+.team-page .dot .center {
+  position: absolute;
+  left: 20px; top: 20px;
+  width: 0; height: 0;
+  margin: -3px;
+  border: 3px solid #70463A;
+  border-radius: 20px;
+}
+.team-page .selected .center {
+  border-color: black;
+  margin: -5px;
+  border-width: 5px;
+}
+
+#giveany {
+  margin-top: 20px;
+  width: 255px;
+  margin-left: 20px;
+}
