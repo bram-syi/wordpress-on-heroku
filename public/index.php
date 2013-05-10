@@ -13,7 +13,7 @@
  */
 
 define('WP_USE_THEMES', true);
-print $url["path"]
+print $url["path"];
 
 /** Loads the WordPress Environment and Template */
 require('./wp-blog-header.php');
