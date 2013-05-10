@@ -14,16 +14,11 @@ define("DB_USER", trim($url["user"]));
 define("DB_PASSWORD", trim($url["pass"]));
 define("DB_HOST", trim($url["host"]));
 define("DB_CHARSET", "utf8");
+define("DB_COLLATE","");
+define('VHOST', 'yes'); 
+$base = '/';
 
 define('DISABLE_WP_CRON',true);
-
-/** Allows both foobar.com and foobar.herokuapp.com to load media assets correctly. */
-define("WP_SITEURL", "http://" . $_SERVER["HTTP_HOST"]);
-
-define("FORCE_SSL_LOGIN", getenv("FORCE_SSL_LOGIN") == "true");
-define("FORCE_SSL_ADMIN", getenv("FORCE_SSL_ADMIN") == "true");
-if ($_SERVER["HTTP_X_FORWARDED_PROTO"] == "https")
-  $_SERVER["HTTPS"] = "on";
 
 // Change each KEY to a different unique phrase.  You won't have to remember the phrases later,
 // so make them long and complicated.  You can visit http://api.wordpress.org/secret-key/1.1/
@@ -39,8 +34,6 @@ define('LOGGED_IN_SALT', '6329e6bbcae89e9b3206c3134c92c0dfe4a086f3b09bd38099ce4d
 // Uncomment and set this to a URL to redirect if a blog does not exist or is a 404 on the main blog. (Useful if signup is disabled)
 // For example, browser will redirect to http://examples.com/ for the following: define( 'NOBLOGREDIRECT', 'http://example.com/' );
 //define( 'NOBLOGREDIRECT', 'http://seeyourimpact.org/' );
-
-define( "WP_USE_MULTIPLE_DB", false );
 
 // double check $base
 if( $base == 'BASE' )
