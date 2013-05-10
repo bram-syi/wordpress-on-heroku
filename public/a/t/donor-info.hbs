@@ -1,0 +1,34 @@
+{{#model}}
+<div>
+  <img {{#user_image}}src="{{.}}"{{/user_image}} width="100" height="100" class="info-image" alt="profile picture">
+
+  <div class="info-block">
+    {{#fullcontact}}<u class="got-fullcontact">reload</u>{{/fullcontact}}
+    {{^fullcontact}}<u class="get-fullcontact">get contact info</u>{{/fullcontact}}
+    <h2>{{name}} <span class="field-id">#{{id}}</span></h2>
+    {{#email}}<a href="mailto:{{.}}" class="user-attr user-email"><i class="icon-envelope-alt"></i> {{.}}</a>{{/email}}
+    {{#user_login}}<a target="_profile" class="user-attr user-link" href="/members/{{.}}"><i class="icon-user"></i> /members/{{.}}</a>{{/user_login}}
+    {{#user_fb_id}}<a target="_profile" class="user-attr user-facebook" href="http://facebook.com/profile.php?id={{.}}"><i class="icon-facebook-sign"></i> connected</a>{{/user_fb_id}}
+    {{#fullcontact.demographics}}
+      <span class="user-attr user-demographics"><i class="icon-tasks"></i>
+        {{gender}}
+        {{ageRange}}
+        {{locationGeneral}}
+      </span>
+    {{/fullcontact.demographics}}
+    {{#occupation}}
+      <span class="user-attr user-occupation"><i class="icon-sitemap"></i> {{.}}
+    {{/occupation}}
+    <div style="margin-top:5px;">
+      {{#fullcontact.socialProfiles}}
+        {{#type}}<a target="_profile" class="user-profile user-{{.}}" href="{{url}}"><img src="http://res.cloudinary.com/seeyourimpact/image/fetch/http://www.fullcontact.com/wp-content/themes/fullcontact/assets/images/social/{{.}}.png" title="{{typeName}}" /></a>{{/type}}
+      {{/fullcontact.socialProfiles}}
+    </div>
+  </div>
+</div>
+{{/model}}
+{{^model}}
+<div>
+  <div class="info-image" style="background:#ddd url(/a/i/loading.gif) no-repeat 50% 50%; width: 100px; height: 100px;"></div>
+</div>
+{{/model}}

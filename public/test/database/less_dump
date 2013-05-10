@@ -1,0 +1,25 @@
+#!/usr/bin/env perl
+
+# print the utterly retarded dumpfiles created by prepare_load.pl in a human-
+# readable fashion
+
+use strict;
+use warnings;
+
+$_ = <>;
+print;
+undef $/;
+
+while (<>) {
+    chomp;
+    s/[\n\r]//sg;
+    foreach my $l (split /\@\@\@\@/) {
+        my @fields = split /\[\|\|\]/, $l;
+        foreach my $f (@fields) {
+            if (length($f) > 40) {
+                $f =~ s/(.{25}).*(.{12})$/$1...$2/;
+            }
+        }
+        print join(',', @fields), "\n";
+    }
+}

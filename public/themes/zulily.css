@@ -1,0 +1,69 @@
+body.theme-zulily {
+  background-color: #5d6785; 
+  background-image: url(/themes/zulily/zulily-bkgd.gif);
+}
+body.theme-zulily {
+  background-position: left 40px;
+  color: #333;
+}
+body.theme-zulily .top-bar {
+  display: block;
+  width: 100%;
+  background: #22404a;
+}
+body.theme-zulily #container,
+body.theme-zulily .campaign-top {
+  background: transparent;
+  box-shadow: 0 0 0 0;
+}
+body.theme-zulily .appeal {
+  margin: 20px;
+  background: white url(/themes/zulily/zulily.png) no-repeat 780px 106%;
+}
+body.theme-zulily .appeal p {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+body.theme-zulily .appeal-image {
+  width: auto;
+  padding: 0;
+}
+body.theme-zulily .appeal-image img {
+  margin: 0;
+  width: 250px;
+  height: 300px;
+
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 1px solid white;
+}
+body.theme-zulily .appeal h1 {
+  margin-bottom: 20px;
+  color: #283a54;
+}
+body.theme-zulily .section-header {
+  color: #283a54;
+}
+body.theme-zulily .appeal .msg {
+  width: 650px;
+  padding: 10px 0;
+  margin: 10px 20px 0 20px;
+}
+body.theme-zulily .share-campaign {
+  left: 30px;
+  bottom: 7px;
+  top: auto;
+  z-index: 2;
+}
+body.theme-zulily .give { border-top: 0px none; }
+body.theme-zulily .actions {  }
+body.theme-zulily .stats {
+  background: rgb(233, 246, 198);
+  background: rgba(233, 246, 198, 0.9);
+  border: 1px solid white;
+}
+
+body.theme-zulily .campaign-content {
+  background: white;
+}
+

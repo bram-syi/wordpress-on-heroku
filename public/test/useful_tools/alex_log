@@ -1,0 +1,7 @@
+#!/bin/bash
+cd ~/tmp
+if [ -n "$1" ]; then
+  tail -F *-$1.log ~/logs/$1.seeyourimpact.com/http/*.log | grep -v 'PHP Notice'
+else
+  tail -F *-live.log ~/logs/seeyourimpact.org/http{,s}/*.log | grep -v 'PHP Notice'
+fi

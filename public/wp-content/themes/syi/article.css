@@ -1,0 +1,361 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.1.1
+build: 47
+*/
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html, body#tinymce {
+	color:#000;
+	background:#FFF;
+
+  font: 12pt Arial;
+}
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF. 
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,
+img {
+	border:0;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+/*
+em,
+strong,
+*/
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+/*
+	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+li {
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+	*font-size:100%;
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color:#000;
+}
+td { vertical-align: top; }
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.1.1
+build: 47
+*/
+/* base.css, part of YUI's CSS Foundation */
+.based h1, #tinymce h1 {
+	/*18px via YUI Fonts CSS foundation*/
+	font-size:138.5%;  
+}
+.based h2, #tinymce h2 {
+	/*16px via YUI Fonts CSS foundation*/
+	font-size:123.1%; 
+}
+.based h3, #tinymce h3 {
+	/*14px via YUI Fonts CSS foundation*/
+	font-size:108%;  
+}
+.based h1,.based h2,.based h3 {
+	/* top & bottom margin based on font size */
+	margin:1em 0;
+}
+.based h1.htop, .based h2.htop, .based h3.htop {
+  margin-top: 0;
+}
+.based h1,.based h2,.based h3,.based h4,.based h5,.based h6,.based strong {
+	/*bringing boldness back to headers and the strong element*/
+	font-weight:bold; 
+}
+.based abbr,.based acronym {
+	/*indicating to users that more info is available */
+	border-bottom:1px dotted #000;
+	cursor:help;
+} 
+.based em {
+	/*bringing italics back to the em element*/
+	font-style:italic;
+}
+.based blockquote,.based ul,.based ol,.based dl {
+	/*giving blockquotes and lists room to breath*/
+	margin:1em;
+}
+.based ol,.based ul,.based dl {
+	/*bringing lists on to the page with breathing room */
+	margin-left:2em;
+}
+.based ol li {
+	/*giving OL's LIs generated numbers*/
+	list-style: decimal outside;	
+  margin: 8px 0;
+}
+.based ul li {
+	/*giving UL's LIs generated disc markers*/
+	list-style: disc outside;
+  margin: 8px 0;
+}
+.based dl dd {
+	/*providing spacing for definition terms*/
+	margin-left:1em;
+}
+.based th,.based td {
+	/*borders and padding to make the table readable*/
+	border:1px solid #000;
+	padding:.5em;
+}
+.based th {
+	/*distinguishing table headers from data cells*/
+	font-weight:bold;
+	text-align:center;
+}
+.based caption {
+	/*coordinated margin to match cell's padding*/
+	margin-bottom:.5em;
+	/*centered so it doesn't blend in to other content*/
+	text-align:center;
+}
+.based p, #tinymce p {
+  line-height: 1.2em;
+}
+.based p, #tinymce p,
+.based fieldset,
+.based table,
+.based pre {
+	/*so things don't run into each other*/
+	margin-top:0.5em;
+	margin-bottom: 0.5em;
+}
+/* setting a consistent width, 160px; 
+   control of type=file still not possible */
+.based input[type=text],.based input[type=password],.based textarea{
+/*
+width:12.25em;
+*width:11.9em;
+*/
+}
+
+/* CLEARFIX */
+.clearfix:after, article:after, aside:after, div:after, form:after, header:after, nav:after, section:after, ul:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
+.clearfix,article,aside,div,form,header,nav,section,ul { display: block; }
+.mceTemp:after {
+  clear: none;
+  content: "";
+}
+
+/* move to our ie CSS file */
+.clearfix,article,aside,div,form,header,nav,section,ul { zoom:1; }  
+
+*html .clearfix,
+*html article,
+*html aside,
+*html div,
+*html form,*html header,*html nav,*html section,*html ul { zoom:normal; }
+
+header,footer { display: block; }
+/* remember to define focus styles! */
+:focus {
+   outline: 0;
+}
+
+
+
+
+/* WORDPRESS STYLES */
+
+/* maxvoltar.com/archive/-webkit-font-smoothing */
+html { -webkit-font-smoothing: antialiased; }
+
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
+.wp-caption.alignright {
+   border: 1px solid #ddd;
+   text-align: center;
+   background-color: #f3f3f3;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   position: relative;
+
+   clear: right;
+   float: right !important;
+   /*margin-top: -10px !important;*/
+   margin-right: -60px !important;
+   margin-left: 30px !important;
+   margin-bottom: 10px;
+
+   box-shadow: 0 1px 1px #ddd;
+   -moz-box-shadow: 0 1px 1px #ddd;
+   -webkit-box-shadow: 0 1px 1px #ddd;
+}
+.wp-caption img {
+   box-shadow: 0 1px 1px #ddd;
+   -moz-box-shadow: 0 1px 1px #ddd;
+   -webkit-box-shadow: 0 1px 1px #ddd;
+}
+
+.wp-caption img {
+   margin: 0;
+   padding: 0;
+   border: 0px none;
+}
+
+.standard-page .wp-caption p.wp-caption-text,
+.wp-caption p.wp-caption-text {
+   font-size: 0.9em;
+   padding: 3px 4px 6px;
+   margin: 0;
+}
+.entry-content p { 
+  text-align: left !important; 
+  margin-bottom: 1em;
+}
+
+h1.entry-title, h2.entry-title {
+  margin: 0.5em 0px 0.5em;
+  font-size: 1.7em;
+}
+
+
+#show_panels article {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+#show_panels article { padding-top: 10px; }
+#cboxContent .wp-caption, #show_panels .wp-caption {
+  margin-right: -45px !important;
+  border: 1px solid #888;
+   box-shadow: 0 1px 1px #888;
+   -moz-box-shadow: 0 1px 1px #888;
+   -webkit-box-shadow: 0 1px 1px #888;
+}
+
+.paperclip {
+   position: absolute;
+   z-index: 10;
+   right: -10px;
+   top: 20px;
+   width: 62px;
+   height: 24px;
+   background: url(images/paperclip.png) no-repeat top left;
+}
+
+article.type-post, .loop article.type-page {
+  padding-bottom: 20px;
+}
+
+.loop article.type-post {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #E4E5DA;
+}
+
+.entry-content p a, .entry-content li a {
+  color: #1B445C;
+  text-decoration: underline;
+}
+

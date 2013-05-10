@@ -1,0 +1,73 @@
+
+body.theme-neil .crumbs .tab-current {
+  background: #D7D7D7;
+}
+body.theme-neil .appeal {
+  background: #D7D7D7 url(/themes/neil/neil.jpg) no-repeat -30px 0;
+}
+
+body.theme-neil .appeal-image {
+  display: none;
+}
+body.theme-neil .appeal-msg {
+  float:right;
+  position: relative;
+  margin: 10px 10px 10px 0;
+  padding: 14px 20px 4px 20px;
+  color: black;
+  width: 640px;
+}
+body.theme-neil #appeal1 {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background: white;
+  border: 1px solid #d7d7d7;
+  display: block;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+}
+body.theme-neil .appeal-msg p,
+body.theme-neil .appeal-msg h1,
+body.theme-neil .appeal-msg h2 {
+  position: relative;
+  z-index: 10;
+}
+body.theme-neil .appeal-msg h1 {
+  font-size: 160%;
+}
+
+body.theme-neil .appeal-msg h2 {
+  font-size: 130%;
+  color: #2B4E64;
+  margin: 0.8em 0 0.5em 0;
+}
+body.theme-neil .appeal-msg .note {
+  font-size: 90%;
+  color: #444;
+}
+
+body.theme-neil .appeal-msg #give-any-amount {
+  position: relative;
+  z-index: 20;
+  float: right;
+  padding: 5px 0;
+}
+
+body.theme-neil .remember {
+  clear: both;
+  float: right;
+  text-align: right;
+  padding-top: 5px;
+  position: relative;
+  z-index: 20;
+}
+body.theme-neil .remember img {
+  margin-top: 15px;
+  display: block;
+}
+body.theme-neil .remember .button {
+  margin: 15px;
+}
+

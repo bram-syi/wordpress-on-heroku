@@ -1,0 +1,40 @@
+syitrunk=~/syi/svn-trunk
+[ -d "$syitrunk" ] || syitrunk=~/SeeYourImpact.org
+
+function syifiles {
+    [ -n "$SYITRUNK" ] && syitrunk=$SYITRUNK
+    plugins="-or -path '*/plugins/*'"
+    [ -n "$PLUGINS" ] && plugins=""
+
+    find "$syitrunk" -not \( \
+        -path '*.svn*' -or -path '*.git*' -or \
+        -path '*/blogs.dir/*' \
+        $plugins \
+    \) -print0
+}
+
+function syigrep {
+    [ $# -eq 0 ] && { echo "1 or more arguments (for grep) are required" >&2; return; }
+    files=()
+    while read -r -d $'\0'; do
+        files+=("$REPLY")
+    done < <(syifiles)
+
+    for ((i=0; i<${#files[*]}; i+=100)); do
+        grep -n "$@" "${files[@]:i:100}" /dev/null
+    done
+}
+
+function phplog {
+    [ $# -eq 0 ] && { echo "1 argument required, such as 'dev2'" >&2; return; }
+    tail -F ~/tmp/php-$1.log | grep -v 'apt_publish_post$'
+}
+
+function svndiff {
+    rand=$RANDOM
+    svn diff "${@}" > /tmp/svndiff.$rand
+    if [ -s /tmp/svndiff.$rand ] ; then
+        cat /tmp/svndiff.$rand | colordiff | less -R 2>/dev/null
+    fi
+    rm /tmp/svndiff.$rand
+}

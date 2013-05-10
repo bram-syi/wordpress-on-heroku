@@ -1,0 +1,7 @@
+(
+    { 
+        table => qr/^wp_\d+_postmeta$/,
+        col => 'meta_value',
+        xform => sub { s/s:(\d+):"([^"]+)"/"s:" . length($2) . ":\"$2\""/ge },
+    }
+);

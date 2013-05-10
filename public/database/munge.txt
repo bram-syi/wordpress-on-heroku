@@ -1,0 +1,8 @@
+table: paypal_settings
+form_action:
+    match: paypal.com
+    replaceWith: sandbox.paypal.com
+business_id
+    match: @
+    replaceWith: @
+

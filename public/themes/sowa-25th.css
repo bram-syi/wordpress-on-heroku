@@ -1,0 +1,6 @@
+.profile-page .crumbs .info { display: none; }
+
+/* change link color in gift details paragraphs */
+.gift-details .details p a {
+  color:#07c;
+}

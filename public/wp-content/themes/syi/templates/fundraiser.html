@@ -1,0 +1,20 @@
+<div id="fr-${id}" class="fundraiser clearfix span6 offset1">
+  <a href="${href}"><img class="left fr-image" src="${img}"></a>
+  <div class="right fr-right span3">
+    <div class="fr-title">
+      <img src="${avatar}" width="50">
+      <a class="name" href="${href}">${name}</a> ${action}<br>
+      <a class="fr-link heading" href="${href}">${title}</a><br>
+    </div>
+    <div class="fr-quote">${content}</div>
+    <div class="fr-actions">
+      <a class="link" href="${href}">learn more</a>
+      <i>or</i>
+      $<form action="${pay_link}" method="POST">
+        <input type="text" name="amount" size="5" maxlength="5" style="width:55px;padding:3px; font-size: 18px;" value="">
+        <input id="give-any" type="submit" class="button medium-button green-button" name="submit" value="give">
+        <input type="hidden" name="eid" value="${id}" />
+      </form>
+    </div>
+  </div>
+</div>

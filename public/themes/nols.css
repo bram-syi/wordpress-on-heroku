@@ -1,0 +1,91 @@
+#video { 
+  float: right;
+  margin-left: 40px;
+}
+#video iframe {
+  border: 1px solid #808080;
+  box-shadow: 0 0 5px #888;
+}
+#video label { 
+  display: block;
+  font-size: 80%;
+  margin-top: 5px;
+}
+
+.appeal-image img {
+  margin-top: 30px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 5px #888;
+}
+
+.team-box {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 280px;
+  width: 240px;
+}
+.team-box .title {
+  margin: 5px 0 0 10px;
+  width: 280px;
+}
+
+.appeal .leaderboard .team {
+  margin-bottom: 5px;
+}
+
+.appeal .msg {
+  float: right;
+  padding-right: 30px;
+  width: 650px;
+  font-size: 105%;
+}
+.appeal .msg p { 
+  margin-bottom: 20px;
+}
+#appeal {
+  border: 0px none;
+  box-shadow: none;
+}
+
+body .appeal-msg h1 {
+  font-size: 28px;
+  display: block;
+  margin: 0 0 10px;
+  padding: 0 0 12px 0;
+  color: #2B4E64;
+  padding-top: 8px;
+}
+
+#appeal #giveany {
+  margin-top: 30px;
+  width: 260px;
+  padding: 6px;
+  background: #fb4;
+  box-shadow: 0 0 10px #666;
+}
+.ie7 #appeal #giveany {
+  width: 280px;
+}
+#appeal #giveany .box {
+  padding: 10px;
+  border: 1px solid #FC8;
+  background: transparent;
+}
+.ie7 #appeal #giveany .box {
+  padding: 10px 0;
+}
+body .appeal-msg #give-any-amount {
+  position: relative;
+  z-index: 20;
+  float: right;
+}
+
+#appeal #giveany label {
+  font-size: 110%;
+}
+#damt {
+  font-size: 18pt;
+  width: 70px !important;
+}
+

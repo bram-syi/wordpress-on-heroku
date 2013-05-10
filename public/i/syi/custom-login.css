@@ -1,0 +1,12 @@
+/* Custom Login Styles */
+
+html {background:#fff ;}
+h1 a {background:url(/wp-content/images/logo.png) 0 0 no-repeat;
+height:100px;
+text-align:center;
+margin-left:20px;
+}
+
+body.login {border-top-color:#dff4fc;}	/* Top bar background color */
+.login p#backtoblog a:link, .login p#backtoblog a:visited {color:#17272d;}	/* Link effects in top bar */
+.login p#backtoblog a:hover, .login p#backtoblog a:active {color:#17272d;text-decoration:underline;}	/* Rollover link effects in top bar */

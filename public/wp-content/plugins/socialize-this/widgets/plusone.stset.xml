@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+	<author>Google</author>
+	<author_url>http://www.google.com/+1/button/</author_url>
+	<name>Google +1</name>
+	<preview>plusone/plusone.png</preview>
+	<description>+1 buttons let people who love your content recommend it on Google search</description>
+	<widget>
+		<name>+1 Small</name>
+		<html><![CDATA[<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><g:plusone size="small" href="%raw_permalink%"></g:plusone>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>+1 Medium</name>
+		<html><![CDATA[<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><g:plusone size="medium" href="%raw_permalink%"></g:plusone>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>+1 Standard</name>
+		<html><![CDATA[<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><g:plusone href="%raw_permalink%"></g:plusone>]]></html>
+		<enabled>2</enabled>
+	</widget>
+	<widget>
+		<name>+1 Tall</name>
+		<html><![CDATA[<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><g:plusone size="tall" href="%raw_permalink%"></g:plusone>]]></html>
+		<enabled>1</enabled>
+	</widget>
+</channel>

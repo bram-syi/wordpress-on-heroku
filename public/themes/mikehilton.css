@@ -1,0 +1,173 @@
+body.theme-mikehilton .wp-caption {
+  margin-right: -30px !important;
+}
+
+#member-since { display: none; }
+
+body.theme-mikehilton #give .more-options h3 {
+  padding-top: 0;
+}
+
+body.theme-mikehilton #give .more-options .box h3,
+body.theme-mikehilton #give .more-options .box p {
+  display: none;
+}
+
+body.theme-mikehilton #appeal {
+  background: url(http://seeyourimpact.org/files/2011/12/jsmt.jpg) no-repeat -15px -5px;
+  border: 4px solid white;
+}
+
+body.theme-mikehilton .appeal-image {
+  display: none;
+}
+
+
+body.theme-mikehilton .appeal .msg {
+  float:right;
+  position: relative;
+  margin: 10px 10px 10px 0;
+  padding: 14px 20px 4px 20px;
+  color: black;
+  width: 700px;
+}
+body.theme-mikehilton .appeal-msg p,
+body.theme-mikehilton .appeal-msg .wp-caption,
+body.theme-mikehilton .appeal-msg dl,
+body.theme-mikehilton .appeal-msg li,
+body.theme-mikehilton .appeal-msg table,
+body.theme-mikehilton .appeal-msg h1,
+body.theme-mikehilton .appeal-msg h2 {
+  position: relative;
+  z-index: 10;
+}
+
+body.theme-mikehilton .appeal-msg h1 {
+  color: #27292D;
+  font-size: 38px;
+  margin: 10px 0 25px 0;
+  width: 440px;
+  line-height: 40px;
+}
+.ie7 body.theme-mikehilton .appeal-msg h1 {
+  margin-top: 45px;
+}
+body.theme-mikehilton .appeal-msg h2 {
+  font-size: 20px;
+  color: #2B4E64;
+  margin: 0.8em 0 0.5em 0;
+}
+body.theme-mikehilton .appeal-msg p {
+  color: white;
+  text-shadow: 0 0 10px #040;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.appeal-msg .paperclip {
+  display: none;
+}
+
+body.theme-mikehilton .remember {
+  display: none; /* for now */
+  position: absolute;
+  right: 230px;
+  background: url(http://seeyourimpact.org/themes/five-for-5/remember.gif) no-repeat 0 5px;
+  padding: 50px 20px 0 90px;
+}
+
+
+body.theme-mikehilton #campaign-tags {
+  width: 260px;
+  font-size: 120%;
+  background: transparent;
+  padding: 0;
+  right: 0;
+}
+body.theme-mikehilton #campaign-tags .more-options {
+  display: none;
+}
+
+body.theme-mikehilton #campaign-gifts {
+  float: left;
+  z-index: 1;
+  margin-top:20px;
+}
+
+#appeal #giveany {
+  position: absolute;
+  bottom: -69px;
+  right: 0;
+  width: 250px;
+  padding: 6px;
+  background: #fb4;
+  box-shadow: 0 0 10px #666;
+}
+.ie7 #appeal #giveany {
+  width: 280px;
+}
+#appeal #giveany .box {
+  padding: 8px;
+  border: 1px solid #FC8;
+  background: transparent;
+}
+.ie7 #appeal #giveany .box {
+  padding: 10px 0;
+}
+body.theme-mikehilton .appeal-msg #give-any-amount {
+  position: relative;
+  z-index: 20;
+  float: right;
+}
+
+#appeal #giveany label {
+  font-size: 110%;
+}
+#damt { 
+  font-size: 18pt;
+  width: 70px !important;
+}
+
+#sharing {
+  top: -37px;
+  left: 520px; 
+}
+.profile-page #stats-bar .stats2 {
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+.quickfacts {
+  border: 0;
+  background: white;
+  padding-top: 25px;
+  margin: 0;
+}
+.quickfacts li {
+  color: #444;
+  font-size: 15px;
+  padding: 8px 15px 10px 35px;
+  background: url(/wp-content/images/chevr.png) no-repeat 15px 11px;
+}
+
+#campaign-tags {
+  padding-left: 20px;
+}
+#how-to-help li {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+
+#appeal #cevhersharex {
+  padding-left: 30px;
+  margin-bottom: -10px;
+}
+
+
+/* EDITOR */
+#cause-row, #twitter-row, #photo-gallery { display: none !important; }
+
+
+

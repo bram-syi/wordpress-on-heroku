@@ -1,0 +1,272 @@
+<html><head>
+<style>
+body {
+  background: transparent url('pics/paper2.jpg') repeat 50% 0;
+  margin: 0px; padding-top: 0px;
+  text-align: center;
+}
+
+.hidden { display: none; }
+
+#content { 
+  text-align: left;
+  width: 1024px;
+  margin: 0px auto;
+  background: #FEFFF7;
+  border: 2px solid #404040;
+  height: 1500px;
+  overflow-x: hidden;
+  zoom: 1;
+  box-shadow: 0 0 15px #000000;
+  -moz-box-shadow: 0 0 15px #000000;
+  -webkit-box-shadow: 0 0 15px #000000;
+}
+#container { position: relative; }
+
+.gallery {
+  top: 0px;
+  left: 0px;
+  width: 1024px;
+  height: 620px;
+}
+#gallery {
+  overflow: hidden;
+  border: 2px solid black;
+}
+#gallery img {
+  width: 1024px;
+  overflow: hidden;
+  display:none;
+  position: absolute;
+  top: 0;
+}
+#mask {
+  width: 1024px;
+  height: 750px;
+  display: none;
+}
+
+.backgr {
+  background: #1F1000;
+  display: none;
+}
+
+.positioned {
+  display: block;
+  position: absolute;
+}
+
+
+#title {
+  color: #d0e0f0; /* #00B1B0 */
+  text-shadow: black 4px 4px 4px;
+  font: bold 60pt Verdana;
+  text-align: left;
+  border-right: 2px solid black;
+}
+.title {
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 160px;
+}
+.title img { margin: 10px 20px; }
+.subtitle { font-size: 20pt; }
+
+
+.cause {
+  left: 620px;
+  top: 520px;
+  width: 400px;
+  height: 100px;
+}
+#cause {
+  font: 16pt Verdana;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+  text-decoration: none;
+  padding: 10px;
+}
+#cause u {
+  color: #5090ff;
+  text-decoration: none;
+}
+#cause:hover u {
+  text-decoration: underline;
+  color: orange;
+}
+
+.overlay {
+  top: 500px;
+  width: 500px;
+  height: 180px;
+  right: 0;
+}
+#overlay {
+  font: bold 30pt Verdana;
+  text-shadow: black 2px 2px 2px;
+  text-align: right;
+  color: #f0ffff;
+}
+#overlay p { margin: 20px;  }
+
+.tabs { 
+  width: 800px;
+  left: 240px;
+  height: 70px;
+  top: 30px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  z-index: 5;
+}
+.tabs a {
+  display: block;
+  float: left;
+  width: 196px;
+  text-align: center;
+  text-decoration: none;
+  font: 12pt Verdana;
+  color: black;
+  padding-top: 10px;
+  height: 60px;
+  border-right: 1px solid #EEEEE7;
+}
+.tabs a span {
+  display: block;
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+.tabs a:hover {
+  background: #C0FFFA;
+}
+
+/*
+.messages {
+  left: 220px;
+  top: 100px;
+  width: 800px;
+  height: 240px;
+}
+*/
+.messages {
+  left: 0px;
+  top: 160px;
+  width: 200px;
+  height: 460px;
+  padding: 0 20px;
+}
+#messages { 
+  font: bold 28pt Verdana;
+  x-text-shadow: black 1px 1px 1px;
+  color: #801F00;
+  z-index: 10;
+  border-right: 2px solid black;
+}
+#messages div { display: none; }
+#messages div span {
+}
+#messages button {
+  font: 16pt Verdana;
+  display: block;
+  margin: 20px;
+}
+
+.light { background: #EEEEE7; }
+
+</style>
+</head><body>
+<div id="content"><div id="container">
+  <div id="gallery" class="gallery positioned">
+    <img src="pics/Isha2.jpg" alt="Isha Vidya: Inspire hope for a child whose parents are in jail">
+    <img src="pics/Padma2.jpg" alt="Padma School: Provide vocational training for rural youth">
+    <img src="pics/jyoti1.jpg" alt="Amar Jyoti: Support integrated schooling for children with disabilities">
+    <img src="pics/Isha1.jpg" alt="Isha Vidya: Inspire hope for a child whose parents are in jail">
+    <img src="pics/TRF.jpg" alt="The Restoring Force: Bring light to villages without any electricity">
+    <img src="pics/jyoti2.jpg" alt="Amar Jyoti: Support integrated schooling for children with disabilities">
+    <img src="pics/BPA2.jpg" alt="Blind People's Association: Aid the visually and physically impaired">
+    <img src="pics/ghi1.jpg" alt="Gardens for Health: Break the cycle of HIV/AIDS and malnutrition">
+  </div>
+  <img id="mask" class="gallery positioned" src="#" />
+  <div class="tabs positioned light backgr"></div>
+  <div id="tabs" class="tabs positioned">
+    <a href="#">our<span>Mission</span></a>
+    <a href="#">our<span>Causes</span></a>
+    <a href="#">our<span>Impact</span></a>
+    <a href="#"><span style="padding-top:10px;">Give Now</span></a>
+  </div>
+  <div class="messages backgr positioned light"></div>
+  <div id="messages" class="messages positioned">
+    <div><span>is a new approach to giving</span>
+       <button>Learn more</button>
+    </div>
+    <div><span>supports a cause you care about</span>
+       <button>Choose a cause</button>
+    </div>
+    <div><span>gives 100% to the charity</span>
+       <button>Give now</button>
+    </div>
+    <div><span>will show you the power of your gift</span>
+       <button>See the stories</button>
+    </div>
+    <div><span>makes it easy to share your success</span>
+       <button>Get badges</button>
+    </div>
+    <div><span>offers gift certificates</span>
+       <button>Give a gift</button>
+    </div>
+    <div><span>needs your help!</span>
+       <button>Get Involved</button>
+    </div>
+  </div>
+  <div class="title positioned light backgr"></div>
+  <div id="title" class="title positioned">
+    <img src="pics/syi.png" />
+  </div>
+  <div class="cause backgr positioned"></div>
+  <a id="cause" class="cause positioned" href="#"></a>
+</div></div>
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  var fin = 1000, fout = 1000, page = 10000, pic = 1;
+  var gallery = $("#gallery");
+  var first = gallery.children(":first");
+  var pic = first;
+
+  function loop() {
+    $("#cause").html("<b>" + pic.attr('alt').replace(": ", "</b><br/>") + ".  <u>See how &raquo;</u>");
+    var oldpic = pic;
+    pic = pic.next();
+    if (pic.length == 0)
+      pic = first;
+
+    pic.css('left', 1200).show();
+    pic.add(oldpic).animate({ left: '-=1200' }, fout);
+
+    setTimeout(loop, page);
+  }
+
+  function advance(t) {
+    var n = t.next();
+    if (n.length == 0)
+       n = messages.children().first();
+    t.hide();
+    n.show();
+
+    setTimeout(advance, page/2, n);
+  }
+
+  $(".backgr").css('opacity', 0.6).filter('.light').css('opacity', 0.9).end().show();
+  pic.fadeIn(500);
+  setTimeout(loop, page);
+
+  var messages = $("#messages");
+  setTimeout(advance, page/2, messages.children().hide().first().show());
+  
+});
+</script>
+</body></html>

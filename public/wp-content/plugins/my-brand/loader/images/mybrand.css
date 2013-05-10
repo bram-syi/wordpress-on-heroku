@@ -1,0 +1,99 @@
+/* My Brand CSS */
+
+#mybrand {width:950px;}
+.left {float:left;width:590px;border:0px;}
+.right {background-image:url();border:0px solid #dde0e3;border-left:0px;float:left;width:200px;height:345px;padding:15px 50px 0 50px;margin-top:-25px;}
+#mybrandrss {width:300px;margin-top:0px;margin-left:35px;margin-bottom:0px;padding:10px 20px 10px 20px;background:#f1eeef;border:1px solid #dde0e3;float:left;}
+#new_stuff {width:857px;float:left;padding-left:28px;}
+#new_block {width:803px;background-color:transparent;background-image:url(bottom.png);border:0px solid #dde0e3;float:left;padding:10px 20px 10px 20px;}
+/* Style for Usual tabs */
+.usual {
+  background-image:url(new2.background.png);
+  background-color:transparent;
+  color:#111;
+  padding:15px 20px;
+  width:590px;
+  height:330px;
+  border:0px solid #dde0e3;
+  margin-left:18px;
+  float:left;
+}
+.usual li { list-style:none; float:left; }
+.usual ul a {
+  padding:6px;
+  border:1px solid #fff;
+ -moz-border-radius:6px;
+ -khtml-border-radius:6px;
+ -webkit-border-radius:6px;
+  border-radius:6px;
+  display:block;
+  padding:6px 10px;
+  text-decoration:none!important;
+  font-weight:bold;
+  margin:1px;
+  margin-left:3px;
+  font:10px;
+  color:#1b1b1b;
+  background-color:transparent;
+  background-image:url(butback.png);
+  border:0px;
+}
+.usual ul a:hover {
+  color:#fff;
+  background-color:transparent;
+  background-image:url(butback.png);
+  border:0px;
+  }
+.usual ul a.selected {
+  margin-bottom:0;
+  color:#fff;
+  background:#000;
+  border:0px;
+  cursor:default;
+  }
+.usual div {
+  padding:10px 10px 8px 10px;
+  *padding-top:3px;
+  *margin-top:-15px;
+  clear:left;
+  background:snow;
+  font:10pt Georgia;
+}
+.usual div a { color:#000; font-weight:bold; }
+
+/**
+ * Farbtastic Color Picker 
+ */
+.farbtastic {
+  position: relative;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 47px;
+  left: 47px;
+  width: 101px;
+  height: 101px;
+}
+.farbtastic .wheel {
+  background: url(wheel.png) no-repeat;
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .overlay {
+  background: url(mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -8px 0 0 -8px;
+  overflow: hidden; 
+  background: url(marker.png) no-repeat;
+}
+

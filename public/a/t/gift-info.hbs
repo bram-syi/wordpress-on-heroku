@@ -1,0 +1,17 @@
+{{#model}}
+<div>
+  {{#image}}<img src="{{.}}" width="100" height="100" class="info-image">{{/image}}
+  <div class="info-block">
+    <h2>{{gift_name}} <span class="field-id">#{{gift_id}}</span></h2>
+    {{#title}}<div>{{.}}</div>{{/title}}
+    {{#excerpt}}<div>{{.}}</div>{{/excerpt}}
+    {{#url}}<a target="_gift" class="user-attr user-link" href="{{.}}"><i class="icon-external-link"></i> {{.}}</a>{{/url}}
+    {{#tags}}<span class="user-attr"><i class="icon-tags"></i> {{.}}</tags>{{/terms}}
+  </div>
+</div>
+{{/model}}
+{{^model}}
+<div>
+  <div class="info-image" style="background:#ddd url(/a/i/loading.gif) no-repeat 50% 50%; width: 100px; height: 100px;"></div>
+</div>
+{{/model}}

@@ -1,0 +1,35 @@
+#=========================
+# How to write a DB patch?
+#=========================
+#
+# A DB patch is a single if { } block in this file.
+# A sample commented patch is shown below.
+#
+# Two utility functions, get_current_version() and set_version()
+# are readily available from this script for your use.
+# More functions can be made available if needed.
+#
+# There is no need to connect to the database. The database handle
+# is stored in a special variable called '$dbh' and is available
+#
+# Please call set_version() at the end when all sql pertaining 
+# to the patch has been executed and it is time to update the 
+# database version. 
+#
+# The patch author may assume that his/her patch is being run
+# in a transaction. Calling set_version() commits the transaction.
+# 
+# Example: Here is a sample DB patch.
+#
+# if (get_current_version($dbh) < 2) {
+#     my $bar = do_something();
+#     my $user = 'gijoe';
+#     my $sth = $dbh->prepare("UPDATE wp_users WHERE user = ?");
+#     $sth->execute($user); 
+#     $dbh->set_version(2);
+#  }
+#
+# Note that get_current_version(), set_version() and $dbh are not defined in this file.
+# This code is called from apply_db_patches.pl which executes the patches listed here.
+# If you have any questions or comments, please email pm@seeyourimpact.org
+#

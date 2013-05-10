@@ -1,0 +1,105 @@
+.fundraiser {
+  position: relative;
+}
+.fundraiser .fr-image {
+  width: 200px;
+  overflow: hidden;
+  margin: 6px 0 0 20px;
+  border: 2px solid #CCC;
+  float:left;
+
+  border: white solid 4px;
+  float: left;
+  box-shadow: 2px 2px 8px #888;
+  -moz-box-shadow: 2px 2px 8px #888;
+  -webkit-box-shadow: 2px 2px 8px #888;
+  position: relative;
+  z-index: 10;
+}
+
+.fundraiser .fr-actions {
+  padding: 6px 0px 6px 220px;
+  font-size: 13px;
+  color: #666;
+  background: #EEE;
+  margin: 20px -10px 0 -200px;
+  border-radius: 8px;
+  text-align: right;
+}
+.fundraiser .fr-title {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #666;
+}
+.fundraiser .fr-quote {
+  font-size: 15px;
+  color: #666;
+}
+.fr-title img {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 1px solid #aaa;
+  margin-left: -4px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+}
+.fr-title .fr-link {
+  color: #1D95CB;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+.fr-title .name {
+  font-weight: bold;
+}
+.fr-actions form {
+  display: inline;
+}
+
+.fr-actions i {
+  padding: 0 5px 0 10px;
+  font-size: 90%;
+}
+.fr-actions a {
+  color: #1D95CB;
+  font-size: 125%;
+}
+
+/* Full-size page-top image */
+img.topbar {
+  background: #eee;
+  padding-top: 11px;
+}
+
+/* Bullet list */
+.syi-points {
+  margin-left: 50px;
+  font-size: 110%;
+  color: #444;
+}
+
+.based .syi-points li {
+  list-style: none;
+}
+.based .syi-points li img {
+  vertical-align: middle;
+}
+
+.end-fundraiser {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.end-fundraiser a {
+  margin: 0 0 0 10px;
+  color:#900;
+}
+
+

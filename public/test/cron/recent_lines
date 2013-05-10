@@ -1,0 +1,182 @@
+#!/usr/bin/env python
+
+# search php and apache logs for recent lines
+
+import pickle
+import os
+from subprocess import PIPE, Popen
+import re
+import time
+import optparse
+import sys
+sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../useful_tools')
+from syi import *
+
+pickle_file = os.environ['HOME'] + '/local/php-log-errors.p'
+
+def main():
+    usage = """%prog [options] [files]
+
+ Print new lines that have not been seen since the last time this script ran.
+ Or, use --since to specify a human-parseable string with a time range (see
+ GNU date's "--date" option). If no files are given, read stdin. '-' is also a
+ filename indicating stdin.
+
+ Note: the --remember option is NOT on by default.
+
+ Examples:
+    # show files with recent lines from default file list for dev3
+    %prog -ode dev3
+
+    # show recent lines with cleaned timestamps from specific files
+    %prog -sc ~/tmp/php-*.log
+
+    # use date's --date <human readable> functionality to list lines from
+    # stdin within the last 2 hours
+    %prog -ic '2 hours ago'"""
+
+    global opts
+    parser = optparse.OptionParser(usage)
+    parser.add_option('--default-files', '-d', action="store_true",
+        help="Search default files: ~/tmp/*-live.log, apache error and access logs")
+    parser.add_option('--environment', '-e', default="live",
+        help="Instead of --default-files searching live logs, search the given logs instead")
+    parser.add_option('--remember', '-r', action="store_true",
+        help="Remember this run (data is pickled to $HOME/local directory)")
+    parser.add_option('--only-files', '-o', action="store_true",
+        help="Only print filenames with recent lines, don't print the actual lines")
+    parser.add_option('--since', '-i',
+        help="Instead of the last time this script ran, use GNU date's --date")
+    parser.add_option('--clean-stamps', '-c', action="store_true",
+        help="Convert timestamps to a common format and timezone")
+    parser.add_option('--pickle', '-p', action="store_true",
+        help="Show status of pickle file")
+    short_lines_option(parser)
+    (opts, args) = parser.parse_args()
+
+    opts.__dict__['print_filenames'] = False
+
+    if opts.pickle:
+        if os.path.exists(pickle_file):
+            lines = pickle.load(open(pickle_file, 'r'))
+            for f, line in lines.iteritems():
+                if f == '-':
+                    f = '<stdin>'
+                print '--- ' + f
+                line_filter(line)
+        return
+
+    if opts.default_files:
+        opts.print_filenames = True
+
+        for f in Popen("find ~/tmp -name '*-" + opts.environment + ".log'", shell=True, stdout=PIPE).stdout:
+            search_file(f.rstrip())
+
+        if opts.environment == 'live':
+            domain = "seeyourimpact.org"
+        else:
+            domain = opts.environment + ".seeyourimpact.com"
+
+        for x in ['', 's']:
+            log_dir = '/home/digvijay/logs/' + domain + '/' + x
+            if os.path.exists(log_dir):
+                for f in Popen("find " + log_dir + " -name '*.log'", shell=True, stdout=PIPE).stdout:
+                    search_file(f.rstrip())
+
+        sys.exit(0)
+
+    if args:
+        if len(args) > 1:
+            opts.print_filenames = True
+        for f in args:
+            search_file(f)
+    else:
+        search_file('-')
+
+def search_file(filename):
+    if filename == '-':
+        f = sys.stdin
+    else:
+        if not os.path.exists(filename):
+            return
+        f = open(filename, 'r')
+
+    if opts.since:
+        last_time = gnu_date(opts.since)
+    else:
+        last_time = get_time(latest_line(filename))
+
+    last_line = None
+    for line in f:
+        if last_line is None:
+            try:
+                x = get_time(line)
+            except:
+                print "exception while reading: " + filename
+                raise
+
+            if x > 0 and x > last_time:
+                if opts.only_files:
+                    print filename
+                else:
+                    if opts.print_filenames:
+                        print "--- %s" % (filename)
+                last_line = line.rstrip()
+
+        if last_line is not None:
+            if not opts.only_files:
+                line_filter(line.rstrip())
+            last_line = line
+
+    if last_line is not None:
+        latest_line(filename, last_line)
+
+def line_filter(line):
+    if opts.clean_stamps:
+        line = get_time(line, do_cleanup=True)
+
+    if opts.short_lines:
+        line = shorten_line(line)
+
+    print line
+
+# filename: full path to file
+# new_line: if set, update the stored data, rather than reading from it
+def latest_line(filename, new_line=None):
+    global lines
+    lines = {}
+
+    if os.path.exists(pickle_file):
+        lines = pickle.load(open(pickle_file, 'r'))
+
+    if new_line is None:
+        if opts.remember and filename in lines:
+            return lines[filename]
+        else:
+            return ''
+    else:
+        lines[filename] = new_line
+        if opts.remember:
+            pickle.dump(lines, open(pickle_file, 'wb'))
+
+def gnu_date(since):
+    args  = "-u --date '" + since + "' +%s"
+
+    # try `date` first, but that won't work on OSX (BSD), so then try `gdate`
+    epoch = try_date('date ' + args + ' 2>/dev/null')
+    if epoch == '0':
+        epoch = try_date('gdate ' + args)
+
+    if epoch == '0':
+        raise Exception('GNU date did not successfully run: ' + args)
+
+    return int(epoch)
+
+def try_date(cmd):
+    for f in Popen(cmd, shell=True, stdout=PIPE).stdout:
+        m = re.match(r'^(\d+)$', f)
+        if m:
+            return m.group(1)
+    return '0'
+
+if __name__ == '__main__': main()

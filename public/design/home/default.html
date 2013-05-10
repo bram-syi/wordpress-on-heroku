@@ -1,0 +1,671 @@
+<html>
+<head>
+<xmeta http-equiv="refresh" content="5" />
+<style>
+/* BEGIN CSS RESET */
+* {
+	text-decoration: none;
+	font-size: 1em;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	}
+code, kbd, samp, pre, tt, var, textarea, 
+input, select, isindex, listing, xmp, plaintext {
+	white-space: normal;
+	font-size: 1em;
+	font: inherit;
+	}
+dfn, i, cite, var, address, em { 
+	font-style: normal; 
+	}
+th, b, strong, h1, h2, h3, h4, h5, h6 { 
+	font-weight: normal; 
+	}
+a, img, a img, iframe, form, fieldset, 
+abbr, acronym, object, applet, table {
+	border: none; 
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+caption, th, td, center { 
+	vertical-align: top;
+	text-align: left;
+	}
+body { 
+	background: white; 
+	line-height: 1; 
+	color: black; 
+	}
+q { 
+	quotes: "" ""; 
+	}
+ul, ol, dir, menu { 
+	list-style: none; 
+	}
+sub, sup { 
+	vertical-align: baseline; 
+	}
+a { 
+	color: inherit; 
+	}
+hr { 
+	display: none; 
+	}
+font { 
+	color: inherit !important; 
+	font: inherit !important; 
+	color: inherit !important; /* editor's note: necessary? */ 
+	}
+/* END CSS RESET */
+
+body {
+  background: white url('pics/bkg.png') repeat-x 0 0;
+  color: white;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.cleared { clear:both; }
+
+.all {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  height: 50px;
+  margin-left: 290px;
+}
+
+.tabs a {
+  float: left;
+  font: 12pt Lucida Sans,Lucida Grande,Lucida Sans Unicode,sans-serif;
+}
+.tabs a.tab {
+  width: 170px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding-top: 18px;
+  height: 60px;
+}
+.tabs a.button {
+  margin-top: 12px;
+}
+.tabs a span {
+  display: block;
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+.tabs a.tab:hover {
+  background: #C0FFFA;
+}
+
+
+
+.bar {
+  margin: 20px 0;
+  height: 530px;
+  overflow: visible !important;
+}
+
+.bar .attach {
+  float: left;
+  margin-left: 250px;
+  margin-right: 1000px;
+  position: relative;
+  z-index: 1;
+}
+
+.bar .photo {
+  display: block;
+
+  padding: 10px;
+  background: white;
+  border: 1px solid #C0C0C0;
+
+  width: 690px;
+  height: 500px;
+
+  -moz-box-shadow: 1px 1px 1px 0 #404040;
+  -webkit-box-shadow: 1px 1px 1px 0 #404040;
+}
+
+.caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 400px;
+  bottom: 30px;
+  margin-left: 280px;
+
+  font: 16px/20px  Lucida Sans,Lucida Grande,Lucida Sans Unicode,sans-serif;
+  color: white;
+  background: #ADA8A1;
+  text-decoration: none;
+  padding: 6px;
+
+  -moz-box-shadow: 0 0 20px 0px #808080;
+  -webkit-box-shadow: 0 0 20px 0px #808080;
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius:8px 8px 8px 8px;
+}
+.caption u {
+  margin-top: 6px;
+  color: #1A70FB;
+  text-decoration: none;
+}
+.caption:hover u {
+  text-decoration: underline;
+  color: orange;
+}
+
+.next-photo {
+  position: absolute;
+  z-index: 1;
+  x-bottom: 30px;
+  margin-left: 960px;
+  margin-top: 235px;
+}
+
+.sidebar-bg {
+  background: transparent url('pics/shadow-r.png') repeat-y 100% 100%;
+  width: 280px;
+  height: 605px;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  padding-right: 10px;
+}
+.sidebar-bg .inner {
+  width: 240px;
+  height: 575px;
+  background: #F9DEA7;
+  border-bottom: 1px solid #C4AD89;
+  border-left: 1px solid #F2D6A7;
+  padding: 10px 20px 20px 20px;
+}
+
+.sidebar-bg .logo {
+  display: block;
+}
+
+.pane {
+  position: absolute;
+  display: none; /* TO start */
+  width: 1000px;
+  height: 510px;
+}
+.page-frame {
+  width: 730px;
+  height: 510px;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  left: 280px;
+  padding: 9px 9px 9px 0;
+  border: 1px solid #808080;
+  top: 20px;
+}
+.no-frame {
+  margin-left: 300px;
+  margin-top: 40px;
+}
+.main {
+  font: 18px Lucida Sans,Lucida Grande,Lucida Sans Unicode,sans-serif;
+  height: 494px;
+  width: 714px;
+  color: black;
+  padding: 8px;
+}
+.page-frame .main {
+  background: #EDE5D4;
+  left-margin: 0px;
+}
+
+
+
+.toolbar {
+  height: 35px;
+}
+.toolbar .tool {
+  margin: 0 10px;
+  padding: 8px;
+  font: 12pt Lucida Sans,Lucida Grande,Lucida Sans Unicode,sans-serif;
+  text-decoration: none;
+}
+.toolbar .tool:hover {
+  background: #1A70FB;
+  color: white;
+}
+.toolbar .l-tool {
+  float:left;
+}
+.toolbar .r-tool {
+  float: right;
+}
+.has-bar {
+  height: 459px;
+}
+
+#home-pane {
+  position: absolute;
+}
+
+
+.scrollable { 
+  /* required settings */ 
+  position:relative; 
+  overflow:hidden; 
+} 
+
+.scrollable .items {
+  width: 200000em;
+  position: absolute;
+}
+
+.sidebar {
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  width: 250px;
+  height: 540px;
+  z-index: 5;
+  overflow: hidden;
+
+  font: bold 24pt Verdana;
+  color: #801F00;
+}
+
+#messages .navi {
+  position: absolute;
+  top: 500px;
+  width: 240px;
+  font-size: 12px;
+}
+
+#messages .item {
+  width: 240px;
+  float: left;
+  margin-right: 200px;
+}
+
+.navi { 
+  color: black;
+  text-align: center;
+}
+
+.boxes {
+  margin: 560px 40px 0 40px;
+  font: 12pt Lucida Sans,Lucida Grande,Lucida Sans Unicode,sans-serif;
+}
+
+.box {
+  float: left;
+  width: 250px;
+  margin: 0 15px;
+  height: 250px;
+  padding: 10px;
+
+  color: black;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.box .spaced { 
+  margin: 10px auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 6px;
+}
+h3 { 
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 6px;
+}
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+h5 {
+  margin-bottom: 6px;
+  font: bold 12px Lucida Sans,Lucida Grande,Lucida Sans Unicode,sans-serif;
+}
+
+
+a.button {
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius:8px 8px 8px 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
+  background: #1A70FB; /* #384BFF; #719938;*/
+  border-color:#5667FF #5667FF rgba(0, 0, 0, 0.25);
+  border-style:solid;
+  border-width:1px;
+  color:#FFFFFF !important;
+  cursor:pointer;
+  display:inline-block;
+  font-size:22px;
+  font-weight:bold;
+  outline:medium none;
+  padding:8px 20px;
+  position:relative;
+  text-decoration:none;
+  text-shadow:0 -1px 1px rgba(0, 0, 0, 0.25);
+  text-transform:capitalize;
+}
+#messages a.button {
+  font-size: 14px;
+  padding: 4px 10px;
+  margin-top: 20px;
+}
+
+.footer { 
+  padding: 0 70px;
+
+}
+.footer .col {
+  width: 130px;
+  padding: 20px;
+  float: left;
+
+  color: #808080;
+  font: 12px Lucida Sans,Lucida Grande,Lucida Sans Unicode,sans-serif;
+}
+.footer h5 { color: #404040; }
+
+#cause-pane .toolbar {
+  background: black;
+  color: white;
+  border-top: 1px solid white;
+}
+
+.causes .cause {
+  height: 60px;
+  background: white;
+  margin-bottom: 8px;
+  padding: 8px;
+
+  border: 1px solid #E0D8C9;
+  border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.causes .health {
+  border-left:8px solid #FF8080;
+}
+.causes .education {
+  border-left:8px solid #80FF80;
+}
+.causes .water {
+  border-left:8px solid #4080FF;
+}
+
+</style>
+<!-- HEAD ================== -->
+
+
+</head>
+<body><div class="all">   <!-- BODY ================== -->
+
+<div class="header">
+  <div id="tabs" class="tabs" style="padding-left:30px;">
+    <a id="give-tab" href="#" class="pane-tab button">Give Now</a>
+    <a id="cause-tab" href="#" class="pane-tab tab"><span>Causes</span></a>
+    <a id="impact-tab" href="#" class="pane-tab tab"><span>Impact</span></a>
+    <a id="mission-tab" href="#" class="pane-tab tab"><span>About</span></a>
+  </div>
+</div>
+<div class="sidebar-bg"><div class="inner"><a class="logo" href="#"><img id="home-tab" src="pics/syi2.png" class="pane-tab tab"></a>
+</div></div>
+
+<div id="home-pane" class="pane" style="display:block;">
+  <div id="messages" class="sidebar messages scrollable">
+    <div class="items">
+    <div class="item"><span>is a new approach to giving</span>
+       <a href="#" class="button">Learn more &raquo;</a>
+    </div>
+    <div class="item"><span>supports a cause you care about</span>
+       <a href="#" class="button">Choose a cause &raquo;</a>
+    </div>
+    <div class="item"><span>gives 100% to the charity</span>
+       <a href="#" class="button">Give now &raquo;</a>
+    </div>
+    <div class="item"><span>will show you the power of your gift</span>
+       <a href="#" class="button">See the stories &raquo;</a>
+    </div>
+    <div class="item"><span>makes it easy to share your success</span>
+       <a href="#" class="button">Get badges &raquo;</a>
+    </div>
+    <div class="item"><span>offers gift certificates</span>
+       <a href="#" class="button">Give a gift &raquo;</a>
+    </div>
+    <div class="item"><span>needs your help!</span>
+       <a href="#" class="button">Get Involved &raquo;</a>
+    </div>
+    </div>
+    <div class="navi">
+       O O O O
+    </div>
+  </div>
+  <img class="next-photo" src="pics/right.png" />
+  <div id="photos" class="bar scrollable"><div class="items">
+
+    <div class="attach">
+      <a class="caption" href="#">Inspire hope for a child whose parents are in jail at <u>Isha Vidya &raquo;</u></a>
+      <img class="photo" src="pics/isha2.jpg" alt="" width="700" height="500">
+    </div>
+
+    <div class="attach">
+      <a href="#" class="caption">Provide vocational training for rural youth at <u>Padma school &raquo;</u></a>
+      <img class="photo" src="pics/padma2.jpg" width="700" height="500">
+    </div>
+
+    <div class="attach">
+      <a href="#" class="caption">Support integrated schooling for children with disabilities at <u>Amar Jyoti &raquo;</u></a>
+      <img class="photo" src="pics/jyoti1.jpg" width="700" height="500">
+    </div>
+
+    <div class="attach">
+      <a href="#" class="caption">Inspire hope for a child whose parents are in jail at <u>Isha Vidya &raquo;</u></a>
+      <img class="photo" src="pics/isha1.jpg" alt="" width="700" height="500">
+    </div>
+
+    <div class="attach">
+      <a href="#" class="caption">Bring light to villages without any electricity at <u>The Restoring Force &raquo;</u></a>
+      <img class="photo" src="pics/trf.jpg" alt="" width="700" height="500">
+    </div>
+
+    <div class="attach">
+      <a href="#" class="caption">Support integrated schooling for children with disabilities at <u>Amar Jyoti &raquo;</u></a>
+      <img class="photo" src="pics/jyoti2.jpg" alt="" width="700" height="500">
+    </div>
+
+    <div class="attach">
+      <a href="#" class="caption">Aid the visually and physically impaired at <u>Blind People's Association &raquo;</u></a>
+      <img class="photo" src="pics/bpa2.jpg" alt="" width="700" height="500">
+    </div>
+
+    <div class="attach">
+      <a href="#" class="caption">Break the cycle of HIV/AIDS and malnutrition at <u>Gardens for Health &raquo;</u></a>
+      <img class="photo" src="pics/ghi1.jpg" alt="" width="700" height="500">
+    </div>
+  </div></div>
+</div>
+
+<div id="mission-pane" class="pane">
+  <div class="sidebar">will impact billions of people someday soon!</div>
+  <div class="page-frame"><div class="main">
+    <h1>Our Mission</h1>
+  </div></div>
+</div>
+
+<div id="impact-pane" class="pane">
+  <div class="sidebar">See Our Impact!</div>
+  <div class="main no-frame">Giving Wall goes here!</div>
+</div>
+
+<div id="cause-pane" class="pane">
+  <div class="sidebar">choose a cause</div>
+  <div id="cause-pane" class="page-frame"><div class="causes main has-bar">
+     <div class="cause health">Health cause</div>
+     <div class="cause education">Education cause</div>
+     <div class="cause water">Water cause</div>
+  </div><div class="toolbar">
+    <a href="#" class="tool l-tool">List</a>
+    <a href="#" class="tool l-tool">Map</a>
+    <a href="#" class="tool r-tool">Health</a>
+    <a href="#" class="tool r-tool">Education</a>
+    <a href="#" class="tool r-tool">Water</a>
+  </div></div>
+</div>
+
+<div id="give-pane" class="pane">
+  <div class="sidebar">Give now!</div>
+  <div class="page-frame"><div class="main">
+    <h1>Give Now</h1>
+  </div></div>
+</div>
+
+<div class="boxes">
+  <div class="box">
+    <h3>Make a difference</h3>
+    <div class="body">This is the text.  There sorta has to be something here for it to look good.  And really, it can be a lot of text since there isn't much else on the page.</div>
+  </div>
+
+  <div class="box">
+    <h3>See us in action</h3>
+    <div class="body">Learn how it works, in this exciting video from the producer of "Titanic"
+       <img class="spaced" src="pics/video.png">
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>We need your help!</h3>
+    <div class="body">
+      Besides making a donation there's so much you can do to help the cause.
+      <a href="#" class="button spaced">Get Involved</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer cleared">
+  <div class="col"><h5>Footer</h5>
+  <ul>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+  </ul>
+  </div>
+
+  <div class="col"><h5>Footer</h5>
+  <ul>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+  </ul>
+  </div>
+
+  <div class="col"><h5>Footer</h5>
+  <ul>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+  </ul>
+  </div>
+
+  <div class="col"><h5>Footer</h5>
+  <ul>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+  </ul>
+  </div>
+
+  <div class="col"><h5>Footer</h5>
+  <ul>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+    <li>footer link</li>
+  </ul>
+  </div>
+  
+</div>
+
+</div></body>
+<script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+// custom easing called "custom" 
+$.easing.custom = function (x, t, b, c, d) { 
+    var s = 1.70158;  
+    if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b; 
+    return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b; 
+}
+
+   $("#photos").scrollable({
+     size: 1,
+     loop: true,
+     easing: 'custom',
+     speed: 1000,
+     next: '.next-photo'
+   }).circular().autoscroll({
+     autoplay: true,
+     steps: 1,
+     interval: 8000
+   });
+
+   $("#messages").scrollable({
+     size: 1,
+     loop: true,
+     speed: 1
+   }).circular().autoscroll({
+     autoplay: true,
+     steps: 1,
+     interval: 3000
+   });
+
+   $(".next-photo").click(function() { 
+     $(this).hide().fadeIn(1500);
+   });
+
+   $(".pane-tab").click(function() { $(".pane").hide(); });
+   $("#mission-tab").click(function() { $("#mission-pane").stop().fadeIn(); });
+   $("#cause-tab").click(function() { $("#cause-pane").stop().fadeIn(); });
+   $("#home-tab").click(function() { $("#home-pane").stop().fadeIn(); });
+   $("#impact-tab").click(function() { $("#impact-pane").stop().fadeIn(); });
+   $("#give-tab").click(function() { $("#give-pane").stop().fadeIn(); });
+
+
+                $('.photo').each(function(){
+                    var $this = $(this);
+		var r=(Math.floor(Math.random()*7)-3)/2;
+                    $this.css({'-moz-transform':'rotate('+r+'deg)','-webkit-transform':'rotate('+r+'deg)','transform':'rotate('+r+'deg)'});
+
+                });
+
+ 
+});
+</script>
+</html>

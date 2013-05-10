@@ -1,0 +1,36 @@
+a.partner {
+  position: relative;
+  display: block;
+  float: left;
+  width: 200px;
+  overflow: hidden;
+  margin: 7px 0 3px 2.5%;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+}
+a.partner img {
+  width: 100%;
+}
+a.partner:hover {
+  border-color: #F88E11;
+  box-shadow: 0 0 5px #888;
+}
+a.partner .partner-name {
+  position: absolute;
+  left: 0; bottom: 0;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 4px black;
+  background: #444;
+  padding: 2px 5px;
+  border-radius: 0 4px 0 0;
+  width: 100%;
+}
+
+.cssgradients a.partner .partner-name {
+  background: transparent;
+  background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0) 0%, rgba(90, 90, 90, .3) 50%, rgba(50, 50, 50, .6) 80%);
+  display: block;
+  padding-top: 30px;
+}

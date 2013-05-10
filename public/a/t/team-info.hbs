@@ -1,0 +1,13 @@
+{{#model}}
+<div>
+  <h2>{{team_title}} <span class="field-id">
+    {{#campaign_name}}<a class="open-tab" rel="campaign/{{campaign_id}}">{{.}}</a> / {{/campaign_name}} 
+    {{team_name}}</span></span>
+  </h2>
+  {{#team_url}}<a target="_profile" class="user-attr user-link" href="{{.}}"><i class="icon-external-link"></i> {{.}}</a>{{/team_url}}
+  {{#goal}}<span class="user-attr"><i class="icon-asterisk"></i> ${{.}} goal</span>{{/goal}}
+  {{#raised}}<span class="user-attr"><i class="icon-asterisk"></i> ${{.}} raised</span>{{/raised}}
+  {{#offline}}<span class="user-attr"><i class="icon-asterisk"></i> ${{.}} offline</span>{{/offline}}
+  {{#donors}}<a class="user-attr open-tab" rel="donations"><i class="icon-user"></i> {{.}} donors</a>{{/donors}}
+</div>
+{{/model}}

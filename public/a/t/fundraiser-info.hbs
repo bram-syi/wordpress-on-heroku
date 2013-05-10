@@ -1,0 +1,23 @@
+{{#model}}
+<div>
+  <img {{#image}}src="{{.}}"{{/image}} width="100" height="100" class="info-image" alt="fundraiser picture">
+
+  <div class="info-block">
+    <h2>{{name}} <span class="field-id">#{{id}}</span></h2>
+    {{#email}}<a href="mailto:{{.}}" class="user-attr user-email"><i class="icon-envelope-alt"></i> {{.}}</a>{{/email}}
+    {{#team}}<span class="user-attr user-team"><i class="icon-sitemap"></i> {{.}}</span>{{/team}}
+    {{#goal}}<span class="user-attr"><i class="icon-asterisk"></i> ${{.}} goal</span>{{/goal}}
+    {{#raised}}<span class="user-attr"><i class="icon-asterisk"></i> ${{.}} raised
+      {{#offline}}(${{.}} offline){{/offline}}
+    </span>{{/raised}}
+    {{#donors}}<a class="user-attr open-tab" rel="donations"><i class="icon-user"></i> {{.}} donors</a>{{/donors}}
+    {{#url}}<div><a target="_profile" class="user-attr user-link" href="{{.}}"><i class="icon-external-link"></i> {{.}}</a></div>{{/url}}
+
+  </div>
+</div>
+{{/model}}
+{{^model}}
+<div>
+  <div class="info-image" style="background:#ddd url(/a/i/loading.gif) no-repeat 50% 50%; width: 100px; height: 100px;"></div>
+</div>
+{{/model}}

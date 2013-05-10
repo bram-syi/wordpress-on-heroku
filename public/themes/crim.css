@@ -1,0 +1,19 @@
+.campaign-page #stats-bar .stats2 {
+  background: #295196;
+  color: white;
+}
+
+.promo-crim-about {
+  clear: both;
+}
+
+.start-page .promo-crim-start-banner div {
+  margin: -15px -35px 20px !important;
+  border: none !important;
+  width: 690px !important;
+}
+
+.chapter-page .stats2 {
+  background: #295196;
+  color: white;
+}

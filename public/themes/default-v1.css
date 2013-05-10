@@ -1,0 +1,197 @@
+/* GENERAL TEMPLATE */
+#appeal {
+  padding: 4px;
+}
+
+
+#appeal-image {
+  position: absolute;
+  left: 380px;
+  background: white;
+  padding: 2px;
+  border: 1px solid #DDD;
+  box-shadow: 0 0 10px #888;
+  -webkit-transform: rotate(2deg);
+
+  width: 250px;
+  margin: 20px 15px;
+}
+#appeal-image img {
+  margin: 0;
+  border: 0px none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#appeal-image .ui {
+  -webkit-transform: rotate(-2deg);
+}
+
+
+
+.appeal .msg {
+  width: 580px;
+  border-left: 1px solid #888;
+  box-shadow: 0 0 10px #888;
+  float: left;
+  background: white;
+  padding: 30px 30px 0;
+  margin: 20px; 
+  min-height: 400px;
+}
+
+.appeal #appeal1 {
+  display: block;
+  float: right;
+  height: 235px;
+  width: 250px;
+}
+.appeal #appeal2 {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  width: 62px;
+  height: 24px;
+  left: 611px;
+  background: url(http://seeyourimpact.org/wp-content/themes/syi/images/paperclip.png) no-repeat top left;
+}
+
+.appeal-container {
+  background: url(http://seeyourimpact.org/wp-content/images/crosshatch.png);
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.sample-stories {
+  padding: 0;
+}
+#appeal .sample-stories { margin: 0 -10px; }
+
+
+.appeal-msg p {
+  font-family: 'Gill Sans / Gill Sans MT', 'Trebuchet MS', Helvetica, sans-serif;
+}
+.appeal-msg h1 {
+  font-family: "freight-sans-pro-1","freight-sans-pro-2",'Gill Sans / Gill Sans MT', 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 28px;
+  margin: 0 0 .7em;
+}
+.appeal-msg p {
+  font-size: 16px; /* 19px for handwriting font? */
+  line-height: 1.4;
+}
+
+
+/* APPEAL PROMO */
+.appeal-msg .promo {
+  clear: both;
+}
+.appeal-msg .promo h2.section-header {
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+.appeal-msg .promo .big-pic {
+  border: 2px solid white;
+  box-shadow: 0 0 5px #888;
+  margin: 0 -10px 0 20px;
+}
+.appeal-msg .promo p.left {
+  width: 210px;
+}
+.appeal-msg .promo p {
+  color: #444;
+  margin-bottom: 1em;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+
+.campaign-sidebar {
+  margin: 10px 20px;
+}
+.campaign-comments h2 {
+  font-size: 24px;
+}
+
+
+/* PROGRESS WIDGET */
+
+.campaign-sidebar .progress-widget
+ {
+  font-family: Helvetica,Arial,sans-serif;
+  position: absolute;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  top: 250px; bottom: -25px;
+  left: 0; right: 0;
+}
+.campaign-sidebar .progress-widget .avatar-link { display: none; }
+.campaign-sidebar .progress-widget .donation-history { margin-bottom: 40px; }
+.campaign-sidebar .progress-widget .donation-history tr { height: 40px; }
+.campaign-sidebar .progress-widget h3 { padding: 0; }
+.campaign-sidebar .progress-widget .see-all { cursor: pointer; text-decoration: underline; }
+.campaign-sidebar .progress-widget td .info {
+  margin: 0;
+}
+
+
+/* GIFT BROWSER */
+.position-0 .gift, .position-1 .gift, .position-2 .gift { top: 50px; }
+.position-3 .gift, .position-4 .gift, .position-5 .gift { top: 300px; }
+
+#gift-section { background: #ffe; }
+#gift-details { background: white; }
+#gifts { border: 1px solid #ddc; }
+
+
+
+/* CAMPAIGN EDITOR */
+
+#campaign-editor-page #charity-banner {
+  position: relative;
+  border: 1px solid #666;
+}
+#campaign-editor-page #charity-logo {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+#campaign-editor-page {
+  background: url(http://seeyourimpact.org/wp-content/images/crosshatch.png);
+}
+#campaign-editor-page #main-image {
+  background: white;
+  margin-top: 62px;
+  right: 30px;
+  left: auto;
+}
+
+#campaign-editor-page .fields {
+  margin: 20px;
+}
+#campaign-editor-page .fields .editfield {
+  margin-bottom: 15px;
+  font-size: 110%;
+}
+#campaign-editor-page .editfield label.full-width {
+  margin-bottom: 15px !important;
+}
+#campaign-editor-page .editfield label.small {
+  font-size: 80%;
+  margin: 0 0 2px 0 !important; padding: 0;
+}
+#campaign-editor-page label .optional { opacity: 0.5; }
+#campaign-editor-page #body-row { width: 900px; }
+#campaign-editor-page .fields #post_content { height: 250px; font-size: 90%; }
+
+#campaign-editor-page .submit-row .green-button {
+  font-size: 1.3em;
+}
+
+
+
+
+
