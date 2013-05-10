@@ -1,34 +1,0 @@
-9
-
-dir
-7009
-http://svn.buddypress.org/tags/1.6.2/bp-xprofile/admin
-http://svn.buddypress.org
-
-
-
-2012-04-20T19:58:27.035471Z
-5997
-bumpbot
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-cdf35c40-ae34-48e0-9cc9-0c9da1808c22
-
-css
-dir
-
-js
-dir
-

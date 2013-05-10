@@ -1,1 +1,0 @@
-$(document).ready(function(){ $("a.faim").hover( function() { $('img', this).fadeIn("slow"); }, function() { $('img', this).fadeOut("slow"); }); });

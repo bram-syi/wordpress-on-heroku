@@ -1,6 +1,0 @@
-Options -Indexes
-
-<FilesMatch "(database|cron|useful_tools)">
-    order deny,allow
-    deny from all
-</FilesMatch>
