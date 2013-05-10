@@ -73,6 +73,8 @@ define( 'BP_SILENCE_THEME_NOTICE', true );
 define( 'NONCE_SALT', 'gfzD?2Lxt)3txA)@}[_cx[-;z/0BrnC.CVGU|u`yo||R#if/eoD8&WlwzK#nHWY*' );
 define( 'FORCE_SSL_LOGIN', false );
 
+define('WP_ALLOW_MULTISITE', true);
+
 // Uncomment and set this to a URL to redirect if a blog does not exist or is a 404 on the main blog. (Useful if signup is disabled)
 // For example, browser will redirect to http://examples.com/ for the following: define( 'NOBLOGREDIRECT', 'http://example.com/' );
 //define( 'NOBLOGREDIRECT', 'http://seeyourimpact.org/' );
