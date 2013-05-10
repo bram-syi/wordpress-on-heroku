@@ -6,6 +6,7 @@ define('WP_CACHE', false); //Added by WP-Cache Manager
 define( 'WPCACHEHOME', '/home/digvijay/SeeYourImpact.org/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 define('CONCATENATE_SCRIPTS', false );
 
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define("DB_NAME", trim($url["path"], "/"));
