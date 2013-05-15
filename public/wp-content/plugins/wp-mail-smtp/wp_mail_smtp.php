@@ -146,7 +146,7 @@ function phpmailer_init_smtp($phpmailer) {
 		
 		// You can add your own options here, see the phpmailer documentation for more info:
 		// http://phpmailer.sourceforge.net/docs/
-		$phpmailer = apply_filters('wp_mail_smtp_custom_options', &$phpmailer);
+		$phpmailer = apply_filters('wp_mail_smtp_custom_options', $phpmailer);
 		
 		
 		// STOP adding options here.
