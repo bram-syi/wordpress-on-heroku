@@ -106,7 +106,7 @@ function phpmailer_init_smtp($phpmailer) {
 		}
 		
 		// If you're using contstants, set any custom options here
-		$phpmailer = apply_filters('wp_mail_smtp_custom_options', &$phpmailer);
+		$phpmailer = apply_filters('wp_mail_smtp_custom_options', $phpmailer);
 		
 	}
 	else {
