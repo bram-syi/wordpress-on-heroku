@@ -107,6 +107,10 @@ server {
     #   rewrite ^/feed/?$ http://feeds.feedburner.com/feedburner-feed-id last;
     # }
   }
+  
+  location /wp-content/V1.33/ {
+    rewrite ^/wp-content/V1.33/(.*)$ /wp-content/$1 last
+  }
 
   location ~ .*\.php$ {
     include         /app/vendor/nginx/conf/fastcgi_params;
