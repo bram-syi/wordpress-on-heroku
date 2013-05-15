@@ -109,7 +109,7 @@ server {
   }
   
   location /wp-content/V1.33/ {
-    rewrite ^/wp-content/V1.33/(.*)$ /wp-content/$1 last
+    rewrite ^/wp-content/V1.33/(.*)$ /wp-content/$1 last;
   }
 
   location ~ .*\.php$ {
