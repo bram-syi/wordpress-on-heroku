@@ -48,7 +48,7 @@ function stopwatch_hook() {
   stopwatch_comment("hook $hook $hooked");
 }
 
-/*
+
 stopwatch_comment('init');
 add_action('wp', 'stopwatch_hook');
 add_action('wp_loaded', 'stopwatch_hook');
@@ -58,6 +58,6 @@ add_action('plugins_loaded', 'stopwatch_hook');
 add_action('muplugins_loaded', 'stopwatch_hook');
 add_action('sanitize_comment_cookies', 'stopwatch_hook');
 add_action('head', 'stopwatch_hook');
-*/
+
 
 define('SYI_PATH', ABSPATH . 'syi/');
