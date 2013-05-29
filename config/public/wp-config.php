@@ -3,7 +3,7 @@
 /** Enable W3 Total Cache **/
 define('WP_CACHE', false); //Added by WP-Cache Manager
 
-define( 'WPCACHEHOME', '/home/digvijay/SeeYourImpact.org/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+define( 'WPCACHEHOME', dirname(__FILE__)."/wp-content/plugins/wp-super-cache" ); //Added by WP-Cache Manager
 define('CONCATENATE_SCRIPTS', false );
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
