@@ -109,7 +109,11 @@ server {
   }
   
   location /wp-content/V1.33/ {
-    rewrite ^/wp-content/V1.33/(.*)$ /wp-content/$1 last;
+    rewrite ^/wp-content/V1.33/(.*)$ http://seeyourimpact.org/wp-content/$1 permanent;
+  }
+  
+  location /files/ {
+    rewrite  ^/files/(.*)$ http://seeyourimpact.org/files/$1 permanent;
   }
 
   location ~ .*\.php$ {
