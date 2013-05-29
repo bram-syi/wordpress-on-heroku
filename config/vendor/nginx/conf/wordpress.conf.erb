@@ -1,6 +1,18 @@
 server {
   server_name       localhost;
   listen            <%= ENV['PORT'] %>;
+  
+  location /wp-content/V1.33/ {
+    rewrite ^/wp-content/V1.33/(.*)$ http://seeyourimpact.org/wp-content/$1 permanent;
+  }
+  
+  location /files/ {
+    rewrite  ^/files/(.*)$ http://seeyourimpact.org/files/$1 permanent;
+  }
+  
+  location /thumbs/ {
+    rewrite ^thumbs/(\d+?)x(\d+?)/(.*?)/(.*) /wp-content/images/timthumb.php?w=$1&h=$2&src=/wp-content/blogs.dir/$3/files/$4&zc=1&s=1 last;
+  }
 
   # Some basic cache-control for static files to be sent to the browser
   location ~ \.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml)$ {
@@ -107,15 +119,12 @@ server {
     #   rewrite ^/feed/?$ http://feeds.feedburner.com/feedburner-feed-id last;
     # }
   }
-  
-  #redirect rules for specific application
-  rewrite ^/wp-content/V1.33/(.*)$ http://seeyourimpact.org/wp-content/$1 permanent;
-  rewrite ^/files/(.*)$ http://seeyourimpact.org/files/$1 permanent;
-  rewrite ^thumbs/(\d+?)x(\d+?)/(.*?)/(.*) /wp-content/images/timthumb.php?w=$1&h=$2&src=/wp-content/blogs.dir/$3/files/$4&zc=1&s=1 last;
 
   location ~ .*\.php$ {
     include         /app/vendor/nginx/conf/fastcgi_params;
     fastcgi_pass    unix:/tmp/php-fpm.socket;
     fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
   }
+  
+  
 }
