@@ -2,9 +2,17 @@ server {
   server_name       localhost;
   listen            <%= ENV['PORT'] %>;
   
-  rewrite /wp-content/V1.33/(.*)$ http://seeyourimpact.org/wp-content/$1;
-  rewrite /files/(.*)$ http://seeyourimpact.org/files/$1;
-  rewrite /thumbs/(\d+?)x(\d+?)/(.*?)/(.*) /wp-content/images/timthumb.php?w=$1&h=$2&src=/wp-content/blogs.dir/$3/files/$4&zc=1&s=1;
+  location /wp-content/V1.33/(.*)$ {
+   return 301 http://seeyourimpact.org/wp-content/$1;
+  }
+  
+  location /files/(.*)$ {
+   return 301 http://seeyourimpact.org/files/$1;
+  }
+  
+  location /thumbs/(\d+?)x(\d+?)/(.*?)/(.*)$ {
+    rewrite /wp-content/images/timthumb.php?w=$1&h=$2&src=/wp-content/blogs.dir/$3/files/$4&zc=1&s=1 last;
+  }
 
   # Some basic cache-control for static files to be sent to the browser
   location ~ \.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml)$ {
