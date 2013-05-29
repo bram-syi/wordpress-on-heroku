@@ -50,7 +50,7 @@ $table_prefix  = 'wp_';   // Only numbers, letters, and underscores please!
 define ('WPLANG', '');
 
 // Temporary fix while I figure out why it's not auto-prepending the dot, and just using the domain
-define ('COOKIE_DOMAIN', 'dev-syi.herokuapp.com');
+define ('COOKIE_DOMAIN',getenv("WORDPRESS_COOKIE_DOMAIN"));
 
 // uncomment this to enable wp-content/sunrise.php support
 // define( 'SUNRISE', 'on' );
