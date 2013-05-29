@@ -6,6 +6,10 @@ server {
    return 301 http://seeyourimpact.org/wp-content/$1;
   }
   
+  location /wp-content/V2.0023/(.*)$ {
+   return 301 http://seeyourimpact.org/wp-content/$1;
+  }
+  
   location /files/(.*)$ {
    return 301 http://seeyourimpact.org/files/$1;
   }
