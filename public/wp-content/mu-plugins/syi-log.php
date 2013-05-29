@@ -55,6 +55,10 @@ class SyiLog {
   protected function build_filename($tag) {
     $log_directory = '/var/log/syi_log';
     $host = $_SERVER['HTTP_HOST'];
+    
+    if ( defined('LOG_DIR') ) {
+      $log_directory = LOG_DIR;
+    }
 
     if (preg_match('/([^\.]+)\.seeyourimpact\.com$/', $host, $m)) {
       $file = $log_directory . "/$tag-" . $m[1] . '.log';

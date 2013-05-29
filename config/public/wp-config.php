@@ -19,6 +19,7 @@ define('VHOST', 'yes');
 $base = '/';
 
 define('DISABLE_WP_CRON',true);
+define("ENABLE_SYSTEM_ACCESS",true);
 
 // Change each KEY to a different unique phrase.  You won't have to remember the phrases later,
 // so make them long and complicated.  You can visit http://api.wordpress.org/secret-key/1.1/
