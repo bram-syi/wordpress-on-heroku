@@ -3,6 +3,8 @@
     header("HTTP/1.0 403 Forbidden");
     exit();
   }
+  
+  
 
   #if (getenv("SYSTEM_USERNAME") == "" || getenv("SYSTEM_PASSWORD") == "") {
   #  header("HTTP/1.0 403 Forbidden");
