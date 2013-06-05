@@ -32,7 +32,7 @@ define('SECRET_KEY', 'f68edb199ccf9f62741d867f95af5918703cb42d85ea6c844f74ca39c0
 define('SECRET_SALT', 'fff7869dc6d7559a8c5a17221d487b772a2a11d038d67ee763e0926f46f624f3');
 define('LOGGED_IN_SALT', '6329e6bbcae89e9b3206c3134c92c0dfe4a086f3b09bd38099ce4df37a34ac3a');
 
-define("MANDRILL_APIKEY","ZL_yDDnfpJk4rlOoy6vmgQ");
+
 
 // Uncomment and set this to a URL to redirect if a blog does not exist or is a 404 on the main blog. (Useful if signup is disabled)
 // For example, browser will redirect to http://examples.com/ for the following: define( 'NOBLOGREDIRECT', 'http://example.com/' );
@@ -70,6 +70,13 @@ define( 'NONCE_SALT', 'gfzD?2Lxt)3txA)@}[_cx[-;z/0BrnC.CVGU|u`yo||R#if/eoD8&Wlwz
 define( 'FORCE_SSL_LOGIN', false );
 
 define('WP_ALLOW_MULTISITE', true);
+
+if ( getenv("WP_HOME") ){
+  define('WP_HOME',getenv("WP_HOME"));
+}
+if ( getenv("WP_SITEURL") ){
+  define('WP_SITEURL',getenv("WP_SITEURL"));
+}
 
 // Uncomment and set this to a URL to redirect if a blog does not exist or is a 404 on the main blog. (Useful if signup is disabled)
 // For example, browser will redirect to http://examples.com/ for the following: define( 'NOBLOGREDIRECT', 'http://example.com/' );
