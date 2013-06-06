@@ -69,6 +69,7 @@ add_action('sanitize_comment_cookies', 'stopwatch_hook');
 add_action('head', 'stopwatch_hook');
 add_filter("option_siteurl","syi_siteurl_filter");
 add_filter("option_home","syi_siteurl_filter");
+add_filter("home_url","syi_siteurl_filter");
 
 
 define('SYI_PATH', ABSPATH . 'syi/');
