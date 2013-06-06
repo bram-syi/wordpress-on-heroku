@@ -48,16 +48,6 @@ function stopwatch_hook() {
   stopwatch_comment("hook $hook $hooked");
 }
 
-function syi_siteurl_filter($siteurl) {
-  if( defined("SITEURL_PATTERN") && defined("SITEURL_REPLACE")) {
-    $new = preg_replace(constant("SITEURL_PATTERN"), constant("SITEURL_REPLACE"),$siteurl);
-    return $new;
-  }
-  else {
-    return $siteurl;
-  }
-}
-
 stopwatch_comment('init');
 add_action('wp', 'stopwatch_hook');
 add_action('wp_loaded', 'stopwatch_hook');
@@ -67,11 +57,6 @@ add_action('plugins_loaded', 'stopwatch_hook');
 add_action('muplugins_loaded', 'stopwatch_hook');
 add_action('sanitize_comment_cookies', 'stopwatch_hook');
 add_action('head', 'stopwatch_hook');
-add_filter("option_siteurl","syi_siteurl_filter");
-add_filter("site_url","syi_siteurl_filter");
-add_filter("content_url","syi_siteurl_filter");
-add_filter("option_home","syi_siteurl_filter");
-add_filter("home_url","syi_siteurl_filter");
 
 
 define('SYI_PATH', ABSPATH . 'syi/');
