@@ -50,8 +50,8 @@ function stopwatch_hook() {
 
 function syi_siteurl_filter($siteurl) {
   if( defined("SITEURL_PATTERN") && defined("SITEURL_REPLACE")) {
-    $new = preg_replace(constant("SITEURL_PATTERN", constant("SITEURL_REPLACE"),$siteurl));
-    echo "<!-- [[filtering siteurl $siteurl to $new]] -->";
+    $new = preg_filter(constant("SITEURL_PATTERN", constant("SITEURL_REPLACE"),$siteurl));
+    echo "<!-- [[filtering siteurl $siteurl to $new ".constant("SITEURL_PATTERN")."  ".constant("SITEURL_REPLACE")."]] -->";
     return $new;
   }
   else {
