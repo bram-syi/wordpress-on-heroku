@@ -76,6 +76,13 @@ if ( getenv("WP_HOME") ){
 }
 if ( getenv("WP_SITEURL") ){
   define('WP_SITEURL',getenv("WP_SITEURL"));
+  
+  add_filter("option_siteurl", "syi_heroku_siteurl");
+  
+  
+  function syi_heroku_siteurl($siteurl) {
+    return $siteurl;
+  }
 }
 
 // Uncomment and set this to a URL to redirect if a blog does not exist or is a 404 on the main blog. (Useful if signup is disabled)
