@@ -71,6 +71,9 @@ define( 'FORCE_SSL_LOGIN', false );
 
 define('WP_ALLOW_MULTISITE', true);
 
+// uncomment this to enable wp-content/sunrise.php support
+define( 'SUNRISE', 'on' );
+
 if ( getenv("SITEURL_PATTERN") ){
   define('SITEURL_PATTERN',getenv("SITEURL_PATTERN"));
 }
