@@ -52,7 +52,11 @@ function __C($path, $ver = CONTENT_VERSION) {
 }
 
 function versioned_url($url, $version = CONTENT_VERSION) {
-  return str_replace('/wp-content/', "/wp-content/V$version/", $url);
+  if (!IS_LIVE_SITE) {
+    return $url;
+  } else {
+    return str_replace('/wp-content/', "/wp-content/V$version/", $url);
+  }
 }
 
 // Uses a trick to execute "svnversion" and return this as the app's version number
