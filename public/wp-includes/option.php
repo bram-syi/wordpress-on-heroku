@@ -166,6 +166,7 @@ function wp_load_alloptions() {
  * @param int $site_id Optional site ID for which to query the options. Defaults to the current site.
  */
 function wp_load_core_site_options( $site_id = null ) {
+        echo "loading core site options";
 	global $wpdb, $_wp_using_ext_object_cache;
 
 	if ( !is_multisite() || $_wp_using_ext_object_cache || defined( 'WP_INSTALLING' ) )
