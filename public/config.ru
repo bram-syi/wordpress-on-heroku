@@ -15,6 +15,7 @@ module Rack
   module Legacy
     class Php
       def run(env, path)
+        @htaccess_enabled = false
         config = {'cgi.force_redirect' => 0}
         config.merge! HtAccess.merge_all(path, public_dir) if @htaccess_enabled
         config = config.collect {|(key, value)| "#{key}=#{value}"}
@@ -36,6 +37,9 @@ INDEXES = ['index.html','index.php', 'index.cgi']
 use Rack::Rewrite do
   # Rewrite rule for WordPress Multi Site
   rewrite %r{.*/files/(.+)}, 'wp-includes/ms-files.php?file=$1'
+
+  #Rewrite rule for CDN versioning on local pow.cx
+  rewrite %r{.*/V2.0023/(.+)}, "$1"
 
   # redirect /foo to /foo/ - emulate the canonical WP .htaccess rewrites
   r301 %r{(^.*/[\w\-_]+$)}, '$1/'

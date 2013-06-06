@@ -48,6 +48,10 @@ function stopwatch_hook() {
   stopwatch_comment("hook $hook $hooked");
 }
 
+function syi_siteurl_filter($siteurl) {
+  echo "<!-- [[filtering siteurl".$siteurl."]] -->";
+  return $siteurl;
+}
 
 stopwatch_comment('init');
 add_action('wp', 'stopwatch_hook');
@@ -58,6 +62,7 @@ add_action('plugins_loaded', 'stopwatch_hook');
 add_action('muplugins_loaded', 'stopwatch_hook');
 add_action('sanitize_comment_cookies', 'stopwatch_hook');
 add_action('head', 'stopwatch_hook');
+add_filter("option_siteurl","syi_siteurl_filter");
 
 
 define('SYI_PATH', ABSPATH . 'syi/');
