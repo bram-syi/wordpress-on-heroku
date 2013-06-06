@@ -49,8 +49,14 @@ function stopwatch_hook() {
 }
 
 function syi_siteurl_filter($siteurl) {
-  echo "<!-- [[filtering siteurl".$siteurl."]] -->";
-  return $siteurl;
+  if( defined("SITEURL_PATTERN") && defined("SITEURL_REPLACE")) {
+    $new = preg_replace(constant("SITEURL_PATTERN", constant("SITEURL_REPLACE"),$siteurl));
+    echo "<!-- [[filtering siteurl $siteurl to $new]] -->";
+    return $new;
+  }
+  else {
+    return $siteurl;
+  }
 }
 
 stopwatch_comment('init');

@@ -71,11 +71,11 @@ define( 'FORCE_SSL_LOGIN', false );
 
 define('WP_ALLOW_MULTISITE', true);
 
-if ( getenv("WP_HOME") ){
-  define('WP_HOME',getenv("WP_HOME"));
+if ( getenv("SITEURL_PATTERN") ){
+  define('SITEURL_PATTERN',getenv("SITEURL_PATTERN"));
 }
-if ( getenv("WP_SITEURL") ){
-  define('WP_SITEURL',getenv("WP_SITEURL"));
+if ( getenv("SITEURL_REPLACE") ){
+  define('SITEURL_REPLACE',getenv("SITEURL_REPLACE"));
 }
 
 // Uncomment and set this to a URL to redirect if a blog does not exist or is a 404 on the main blog. (Useful if signup is disabled)
